@@ -11,8 +11,9 @@ Updated: 2026-10-30. Evidence: [Batch 001](batches/001.md), 21 files; [Batch 002
 | C03 | Build a durable, growing design knowledge base for use by coding agents. | Conversation goal: preserve references and design taste for Claude Code, Codex, or another agent. |
 | C04 | The most valued qualities are **clean icons, spacing, button placement, and overall appearance**. | Explicit follow-up about what the user likes most in the reference batch. These are confirmed priorities; exact implementation recipes remain proposals. |
 | C05 | **Keep the skill flexible across themes, client brands, and design systems. Theme colors must follow the current user's requirements.** | Explicit follow-up. Applies to this skill and its use by any user; reference palettes must not become restrictions or defaults that override a project's theme. |
+| C06 | Cult UI's component design matches the user's taste; include its publicly reusable source as code references. | Explicit request linking [Cult UI](https://www.cult-ui.com/) and its [public repository](https://github.com/nolly-studio/cult-ui). This approves the overall design direction, not every component, effect or source default. See the [pinned code collection](cult-ui/README.md). C05 continues to govern theme choices. |
 
-There are no confirmed favorite fonts, exact colors, spacing values, icon packages, fixed button positions, or preferred light/dark mode. Theme flexibility itself is confirmed. No explicit visual dislikes have been supplied.
+There are no confirmed favorite fonts, exact colors, spacing values, icon packages, fixed button positions, or preferred light/dark mode. Theme flexibility itself is confirmed. No explicit visual dislikes have been supplied. Cult UI adds inspectable implementation examples for composition, controls and motion; its source has not been rendered or tested here as a complete application. It does not establish a mandatory React, Next.js, Tailwind, animation or icon stack.
 
 ## Theme independence
 
