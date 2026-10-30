@@ -1,0 +1,96 @@
+---
+title: Magnetic Button
+description: Animated React magnetic button that follows the cursor with spring physics, configurable strength, and reduced motion support.
+icon: Magnet
+dependencies:
+  - motion.dev
+installer: magnetic-button
+---
+
+## Features
+
+- Cursor-following magnetic effect
+- Configurable strength and activation radius
+- Spring physics for natural movement
+- Respects reduced motion preferences
+- Touch device detection (effect disabled on touch)
+- Disabled state support
+- Polymorphic with `asChild` prop
+- GPU-accelerated transforms
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `role="presentation"` | Wrapper div | Indicates the outer mouse-tracking wrapper is decorative and not interactive |
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the magnetic cursor-following effect is completely disabled. The component also detects hover-capable devices and disables the effect on touch devices. When the `disabled` prop is set, the magnetic effect is also disabled.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/magnetic-button/index.tsx"
+  name="MagneticButtonProps"
+/>
+
+## Usage
+
+```tsx
+import MagneticButton from "@/components/magnetic-button";
+
+export default function Example() {
+  return (
+    <MagneticButton strength={0.3} radius={150}>
+      Hover near me
+    </MagneticButton>
+  );
+}
+```
+
+## Examples
+
+### Default
+
+```tsx
+<MagneticButton>Click me</MagneticButton>
+```
+
+### Custom Strength
+
+Increase the magnetic pull strength (0-1):
+
+```tsx
+<MagneticButton strength={0.5}>Strong magnetic effect</MagneticButton>
+```
+
+### Custom Radius
+
+Adjust the activation radius in pixels:
+
+```tsx
+<MagneticButton radius={200}>Large activation area</MagneticButton>
+```
+
+### Custom Spring Config
+
+Fine-tune the spring animation:
+
+```tsx
+<MagneticButton springConfig={{ duration: 0.6, bounce: 0.2 }}>
+  Bouncy
+</MagneticButton>
+```
+
+### As Child (Polymorphic)
+
+Use with any component using `asChild`:
+
+```tsx
+<MagneticButton asChild>
+  <a href="/docs">Go to Docs</a>
+</MagneticButton>
+```

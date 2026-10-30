@@ -1,0 +1,40 @@
+---
+title: Social Selector
+description: Animated React social account selector with toggle animations, icon and label variants, keyboard and screen reader accessibility.
+icon: Share2
+dependencies:
+  - motion.dev
+installer: social-selector
+---
+
+## Features
+
+- Animated select/deselect
+- Icon and label variants
+- Keyboard and screen reader support
+- Responsive layout
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `aria-label` | Platform buttons | Describes the action (e.g., "Select X platform") |
+
+### Screen Reader
+
+- Each platform icon button contains a visually hidden `<span className="sr-only">` with the platform name.
+- SVG icons include `<title>` elements (e.g., "X icon", "Bluesky icon", "Threads icon").
+- External links use `rel="noopener noreferrer"` for security.
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the background pill sliding animation and the domain text blur/slide transitions are disabled.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/social-selector/index.tsx"
+  name="SocialSelectorProps"
+/>

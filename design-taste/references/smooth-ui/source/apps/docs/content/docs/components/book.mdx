@@ -1,0 +1,44 @@
+---
+title: Book
+description: Animated 3D React book component with CSS perspective transforms, hover rotation, and stripe or simple cover variants.
+icon: BookOpen
+dependencies:
+  - motion.dev
+references: ["https://vercel.com/geist/book"]
+installer: book
+---
+
+## Features
+
+3D perspective book with hover rotation, two cover variants, and customizable colours. Optional illustration and logo slots.
+
+## Variants
+
+### Stripe
+
+Default variant — a colour band on the spine and a white body. The classic technical-book look.
+
+### Simple
+
+Full-colour cover with no stripe band. Set `color` and `textColor` for a single-tone jacket.
+
+### Custom Color
+
+Same stripe layout with a custom spine colour — pass any CSS colour to `color`.
+
+## Accessibility
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the hover rotation and scale transition are disabled, and the book renders in its static resting state.
+
+### ARIA
+
+Decorative elements such as the spine binding overlays, page edges, and back cover are marked with `aria-hidden` to prevent screen readers from announcing visual-only content.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/book/index.tsx"
+  name="BookProps"
+/>

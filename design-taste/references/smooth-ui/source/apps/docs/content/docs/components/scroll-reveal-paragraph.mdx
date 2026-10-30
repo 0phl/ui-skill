@@ -1,0 +1,34 @@
+---
+title: Scroll Reveal Paragraph
+description: Animated React scroll-reveal paragraph component with viewport-triggered fade and translate animations using Intersection Observer.
+icon: Type
+dependencies:
+  - motion.dev
+installer: scroll-reveal-paragraph
+---
+
+## Features
+
+- Reveal on scroll with smooth fade and translate
+- Per-paragraph stagger for long-form content
+- Configurable thresholds and offsets
+- Built with Framer Motion + Intersection Observer
+- Accessible and performant
+
+## Accessibility
+
+### Screen Reader
+
+- The component renders as a semantic `p` element, preserving paragraph structure for assistive technologies.
+- Each word is wrapped in a `span` for animation purposes, but the text content remains fully readable.
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, all words are displayed at full opacity immediately without the scroll-driven reveal effect. The ghost text overlay used for the reveal effect is also hidden.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/scroll-reveal-paragraph/index.tsx"
+  name="ScrollRevealParagraphProps"
+/>

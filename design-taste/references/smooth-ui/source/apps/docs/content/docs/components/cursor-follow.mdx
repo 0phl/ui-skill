@@ -1,0 +1,40 @@
+---
+title: Cursor Follow
+description: Animated React cursor-following blob component with spring physics, blend and blur styling options, and performance-aware updates.
+icon: MousePointer
+dependencies:
+  - motion.dev
+installer: cursor-follow
+---
+
+## Features
+
+- Tracks pointer with spring animation
+- Blend/blur styling options
+- Performance-aware updates
+- Easy theming
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `role="application"` | Container | Indicates the region is an interactive application widget |
+| `tabIndex={0}` | Container | Makes the container focusable for keyboard/focus events |
+
+### Screen Reader
+
+- The component listens to `onFocus` and `onBlur` events in addition to mouse events, allowing `data-cursor-text` content to be triggered by focus.
+- The cursor bubble itself is purely decorative and uses `pointer-events: none`, so it does not interfere with assistive technology.
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the cursor bubble appears instantly without scale or opacity entrance animations. The spring-based position tracking still operates via motion values.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/cursor-follow/index.tsx"
+  name="CursorFollowProps"
+/>

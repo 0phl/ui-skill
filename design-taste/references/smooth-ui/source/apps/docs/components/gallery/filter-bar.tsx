@@ -1,0 +1,137 @@
+"use client";
+
+import { cn } from "@repo/shadcn-ui/lib/utils";
+import { motion, useReducedMotion } from "motion/react";
+import { IconMagnifierFill24, IconXmarkFill24 } from "nucleo-core-fill-24";
+import { useCallback, useEffect, useRef, useState } from "react";
+
+export type FilterBarProps = {
+  categories: string[];
+  activeCategory: string | null;
+  searchQuery: string;
+  onCategoryChange: (category: string | null) => void;
+  onSearchChange: (query: string) => void;
+};
+
+const DEBOUNCE_MS = 200;
+
+export const FilterBar = ({
+  categories,
+  activeCategory,
+  searchQuery,
+  onCategoryChange,
+  onSearchChange,
+}: FilterBarProps) => {
+  const shouldReduceMotion = useReducedMotion();
+  const [localSearch, setLocalSearch] = useState(searchQuery);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Sync external searchQuery changes back to local state
+  useEffect(() => {
+    setLocalSearch(searchQuery);
+  }, [searchQuery]);
+
+  const handleSearchInput = useCallback(
+    (value: string) => {
+      setLocalSearch(value);
+
+      if (debounceRef.current) {
+        clearTimeout(debounceRef.current);
+      }
+
+      debounceRef.current = setTimeout(() => {
+        onSearchChange(value);
+      }, DEBOUNCE_MS);
+    },
+    [onSearchChange]
+  );
+
+  // Cleanup debounce on unmount
+  useEffect(
+    () => () => {
+      if (debounceRef.current) {
+        clearTimeout(debounceRef.current);
+      }
+    },
+    []
+  );
+
+  const clearSearch = useCallback(() => {
+    setLocalSearch("");
+    onSearchChange("");
+    inputRef.current?.focus();
+  }, [onSearchChange]);
+
+  const allCategories = [
+    { label: "All", value: null },
+    ...categories.map((c) => ({ label: c, value: c })),
+  ];
+
+  return (
+    <div className="flex flex-col gap-4">
+      {/* Search input */}
+      <div className="relative">
+        <IconMagnifierFill24 className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+        <input
+          aria-label="Search components"
+          className={cn(
+            "h-10 w-full rounded-lg border border-border bg-background pr-10 pl-10 text-foreground text-sm",
+            "placeholder:text-muted-foreground",
+            "focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary",
+            "transition-colors"
+          )}
+          onChange={(e) => handleSearchInput(e.target.value)}
+          placeholder="Search components..."
+          ref={inputRef}
+          type="text"
+          value={localSearch}
+        />
+        {localSearch ? (
+          <button
+            aria-label="Clear search"
+            className="absolute top-1/2 right-3 -translate-y-1/2 cursor-pointer text-muted-foreground hover:text-foreground"
+            onClick={clearSearch}
+            type="button"
+          >
+            <IconXmarkFill24 className="h-4 w-4" />
+          </button>
+        ) : null}
+      </div>
+
+      {/* Category pills */}
+      <div
+        aria-label="Filter by category"
+        className="flex flex-wrap gap-2"
+        role="group"
+      >
+        {allCategories.map(({ label, value }) => {
+          const isActive = activeCategory === value;
+
+          return (
+            <motion.button
+              aria-pressed={isActive}
+              className={cn(
+                "relative cursor-pointer rounded-full border px-3 py-1.5 font-medium text-sm transition-colors",
+                isActive
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border bg-background text-muted-foreground hover:border-primary/50 hover:text-foreground"
+              )}
+              key={label}
+              onClick={() => onCategoryChange(value)}
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0 }
+                  : { bounce: 0.1, duration: 0.25, type: "spring" }
+              }
+              type="button"
+              whileTap={shouldReduceMotion ? undefined : { scale: 0.95 }}
+            >
+              {label}
+            </motion.button>
+          );
+        })}
+      </div>
+    </div>
+  );
+};

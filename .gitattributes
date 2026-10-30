@@ -7,3 +7,4 @@
 
 # Keep the licensed upstream snapshot byte-for-byte identical to its Git blobs.
 design-taste/references/cult-ui/source/** -text
+design-taste/references/smooth-ui/source/** -text

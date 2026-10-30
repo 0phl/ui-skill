@@ -1,0 +1,135 @@
+"use client";
+
+import type { DockItem } from "@repo/smoothui/components/dock";
+import Dock from "@repo/smoothui/components/dock";
+import type { AppIcon } from "@smoothui/data/app-icons";
+import { appIconById, dockIcons } from "@smoothui/data/app-icons";
+import { type ReactNode, useLayoutEffect, useRef, useState } from "react";
+
+const FitToWidth = ({ children }: { children: ReactNode }) => {
+  const hostRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+
+  useLayoutEffect(() => {
+    const host = hostRef.current;
+    const content = contentRef.current;
+    if (!(host && content)) {
+      return;
+    }
+    const update = () => {
+      const available = host.clientWidth;
+      const needed = content.scrollWidth;
+      setScale(available > 0 && needed > available ? available / needed : 1);
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(host);
+    observer.observe(content);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="flex w-full justify-center overflow-hidden" ref={hostRef}>
+      <div
+        ref={contentRef}
+        style={{
+          transform: `scale(${scale})`,
+          transformOrigin: "bottom center",
+        }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
+
+const appIcon = (app: AppIcon, size: number) => (
+  <img
+    alt=""
+    className="size-full rounded-[22%]"
+    draggable={false}
+    src={`${app.src}?tr=w-${size}`}
+  />
+);
+
+export default function DockDemo() {
+  const [openApp, setOpenApp] = useState("Finder");
+
+  const items: DockItem[] = dockIcons.map((app, index) => ({
+    // The first two read as "running" — a dock with nothing open looks staged.
+    active: index < 2,
+    icon: appIcon(app, 128),
+    id: app.id,
+    label: app.name,
+    onSelect: () => setOpenApp(app.name),
+  }));
+
+  const sideItems: DockItem[] = [
+    "safari",
+    "photos",
+    "screenshot",
+    "time-machine",
+  ]
+    .map((id) => appIconById(id))
+    .filter((app): app is AppIcon => app !== undefined)
+    .map((app, index) => ({
+      active: index === 0,
+      icon: appIcon(app, 96),
+      id: app.id,
+      label: app.name,
+    }));
+
+  return (
+    <div className="relative h-[min(28rem,70dvh)] w-full overflow-hidden rounded-2xl border border-foreground/10">
+      <img
+        alt="Amber and violet abstract color fields"
+        className="absolute inset-0 size-full select-none object-cover"
+        draggable={false}
+        src="https://ik.imagekit.io/16u211libb/smoothui/scenes/amber-violet.webp?tr=w-1600,f-auto"
+      />
+      {/* Scrim: darkest at the two edges the chrome sits on, so the menu bar
+          and the dock keep their contrast whatever the photo is doing. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[linear-gradient(to_bottom,rgb(0_0_0/0.55)_0%,rgb(0_0_0/0.1)_28%,rgb(0_0_0/0.15)_62%,rgb(0_0_0/0.6)_100%)] bg-black/25"
+      />
+
+      <div className="absolute inset-x-0 top-0 flex items-center justify-between border-white/10 border-b bg-white/10 py-1.5 pr-1.5 pl-4 text-[11px] text-white/85 backdrop-blur-md">
+        <span className="font-semibold tracking-tight">{openApp}</span>
+        <span className="pr-2 tabular-nums">9:41</span>
+      </div>
+
+      <div className="absolute inset-x-0 top-20 flex flex-col items-center gap-1.5 px-8 text-center">
+        <p className="font-medium text-2xl text-white tracking-tight">
+          {openApp}
+        </p>
+        <p className="max-w-sm text-[13px] text-white/65">
+          The icons either side of the cursor grow too, tapering off over three
+          tiles. Click one to bounce it.
+        </p>
+      </div>
+
+      <div className="absolute top-1/2 right-2 -translate-y-1/2 max-lg:hidden">
+        <Dock
+          baseSize={36}
+          distance={120}
+          items={sideItems}
+          magnification={1.35}
+          orientation="vertical"
+        />
+      </div>
+
+      <div className="absolute inset-x-0 bottom-3 flex justify-center px-2 sm:bottom-4">
+        <FitToWidth>
+          <Dock
+            baseSize={36}
+            distance={120}
+            items={items}
+            magnification={1.35}
+          />
+        </FitToWidth>
+      </div>
+    </div>
+  );
+}

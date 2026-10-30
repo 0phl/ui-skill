@@ -1,0 +1,32 @@
+---
+title: Exposure Slider
+description: An iOS Camera-style exposure slider with a draggable ticker, animated notch marks, and a circular progress indicator.
+icon: SunMedium
+dependencies:
+  - motion.dev
+references: ["https://apple.com"]
+installer: exposure-slider
+---
+
+## Features
+
+- Draggable ticker with spring-physics snap behavior
+- Animated notch marks with proximity-based height and opacity
+- Circular SVG progress ring showing positive/negative values
+- Edge fade gradient for depth effect
+- Configurable min/max range and step size
+- onChange callback for value tracking
+- Respects reduced motion preferences
+
+## Accessibility
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the spring smoothing on the drag offset is bypassed and the raw motion value is used directly for instant visual feedback.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/exposure-slider/index.tsx"
+  name="ExposureSliderProps"
+/>

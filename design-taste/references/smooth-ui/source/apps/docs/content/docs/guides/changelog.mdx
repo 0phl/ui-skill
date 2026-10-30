@@ -1,0 +1,404 @@
+---
+title: Changelog
+description: View the release notes and updates for SmoothUI. Stay up to date with the latest changes in React components, TailwindCSS styles, and animations.
+---
+
+> This page and the changelog bell are maintained manually. The entry below
+> describes the SmoothUI 4.0.0 product release. Package release
+> notes are maintained separately by release-please in
+> [GitHub Releases](https://github.com/educlopez/smoothui/releases),
+> [the component changelog](https://github.com/educlopez/smoothui/blob/main/packages/smoothui/CHANGELOG.md)
+> and [the CLI changelog](https://github.com/educlopez/smoothui/blob/main/packages/cli/CHANGELOG.md).
+
+## 4.0.0
+
+<ChangelogEntry date="Oct 14, 2026" version="4.0.0" title="Registry rename">
+
+Owned primitives moved to `/docs/primitives`, and several pattern packages were renamed. Old documentation URLs redirect in one hop. Old registry URLs (`/r/{old}.json`) still return the new item.
+
+| Old name | New name | Install |
+| --- | --- | --- |
+| `animated-input` | `float-input` | `npx shadcn@latest add https://smoothui.dev/r/float-input.json` |
+| `animated-number-input` | `digit-roll` | `npx shadcn@latest add https://smoothui.dev/r/digit-roll.json` |
+| `animated-o-t-p-input` | `otp-slots` | `npx shadcn@latest add https://smoothui.dev/r/otp-slots.json` |
+| `animated-progress-bar` | `progress` | `npx shadcn@latest add https://smoothui.dev/r/progress.json` |
+| `animated-tabs` | `tabs` | `npx shadcn@latest add https://smoothui.dev/r/tabs.json` |
+| `animated-toggle` | `morph-toggle` | `npx shadcn@latest add https://smoothui.dev/r/morph-toggle.json` |
+| `animated-tooltip` | `tooltip` | `npx shadcn@latest add https://smoothui.dev/r/tooltip.json` |
+| `basic-accordion` | `accordion` | `npx shadcn@latest add https://smoothui.dev/r/accordion.json` |
+| `basic-dropdown` | `dropdown-menu` | `npx shadcn@latest add https://smoothui.dev/r/dropdown-menu.json` |
+| `basic-modal` | `dialog` | `npx shadcn@latest add https://smoothui.dev/r/dialog.json` |
+| `basic-toast` | `toast` | `npx shadcn@latest add https://smoothui.dev/r/toast.json` |
+| `country-dialog` | `country-picker` | `npx shadcn@latest add https://smoothui.dev/r/country-picker.json` |
+| `notification-badge` | `count-badge` | `npx shadcn@latest add https://smoothui.dev/r/count-badge.json` |
+| `searchable-dropdown` | `combobox` | `npx shadcn@latest add https://smoothui.dev/r/combobox.json` |
+| `skeleton-loader` | `content-skeleton` | `npx shadcn@latest add https://smoothui.dev/r/content-skeleton.json` |
+
+The CLI package is unchanged.
+
+</ChangelogEntry>
+
+## 3.8.0
+
+<ChangelogEntry date="Sep 19, 2026" version="3.8.0" title="Expanded Library, Live Demos & Original Media">
+
+These notes cover the August–September changes integrated for SmoothUI 3.8.0.
+The separate CLI 1.1.3 release updates development test tooling only; it does not add CLI runtime features.
+
+### Components, docs and quality
+
+- Added 67 components with registry entries, documentation and examples, plus self-sizing preview frames.
+- Expanded component accessibility coverage with axe tests and fixes, alongside reduced-motion and keyboard interaction checks.
+- Updated Next.js to 16.3.3 and Sharp to 0.35.4, with patched same-major dependency floors for the production security audit; refined CI validation and release-flow checks.
+- Completed the shared media dictionary migration across components, blocks and templates.
+
+### Landing and Playground
+
+- Added a draggable component canvas and refined the live component showcase, navigation, responsive layouts and documentation links.
+- Consolidated theme exploration in the Playground, preserving shared preset URLs and the legacy themes route.
+- Refined the hero, feature panels, AI workflow and UI Craft installation section with generated backgrounds and interactive UI previews.
+- Added optional, non-interactive square and contour textures to selected artwork; other backgrounds remain clean.
+- Separated readable feature captions from vivid artwork instead of dimming the entire image.
+- Hardened inline clipboard feedback: failed writes allow retry without false success, command changes invalidate pending feedback, and timers are cleaned up on unmount.
+- Kept the footer mascot interaction, while replacing the large installer mascot copy prompt with the compact shared copy control. The copy gutter now matches the command background in both themes.
+
+### Original media library
+
+- Added a searchable media gallery with 95 unique active assets: 12 abstract backgrounds, 8 landscapes, 4 event images, 50 people, 18 animals, 2 products and 1 fantasy card.
+- Replaced legacy demo portraits with the generated Troupe cast, keeping source-provided identity and gender metadata; retained compatibility aliases without duplicating gallery entries.
+- Replaced product imagery with ivory sneaker and headphones artwork, and the old tarot card with Nymara while preserving its complete card composition.
+- Added meaningful mountain, sea, forest and event imagery for Photo Tabs, Apple Invites and Expandable Cards, plus distinct landscapes for Scrollable Card Stack and Image Metadata Preview.
+- Centralized landing and demo image selection, updated misleading image labels and metadata, and documented asset provenance and rollback references.
+
+### Blog and interaction fixes
+
+- Added topic-specific editorial cover compositions for all 15 blog posts: generated backgrounds, optional textures, frosted panels and neutral UI illustrations across landing cards, the blog index and article heroes.
+- Kept valid canonical background images for social metadata and structured data; composed social images are not included in this update.
+- Fixed Number Flow animation lifecycle cleanup and reduced-motion behavior, and matched homepage control proportions to the documentation example without changing its initial value.
+- Fixed reduced-motion Scrollable Card Stack pagination: cards retain static centering and navigation stays above the card layers, preserving pointer and keyboard access.
+- Improved event-card text contrast, responsive metadata layouts, image alternative text and demo identity consistency.
+- Added targeted media, artwork, clipboard, geometry and responsive browser regression coverage.
+
+For source history behind this release, see the
+[August component expansion](https://github.com/educlopez/smoothui/commit/d4cf30e),
+[accessibility audit](https://github.com/educlopez/smoothui/commit/6ea6727),
+[component canvas and media dictionary](https://github.com/educlopez/smoothui/commit/c85e7ff),
+[media migration fixes](https://github.com/educlopez/smoothui/commit/d7cf194)
+and [September landing consolidation](https://github.com/educlopez/smoothui/commit/e66ddc5).
+
+</ChangelogEntry>
+
+## 3.6.0
+
+<ChangelogEntry date="Jul 31, 2026" version="3.6.0" title="AI Components, Templates & Rebuilt Docs">
+
+### AI components
+
+- Twenty new components for agent surfaces: `ai-message`, `ai-response`, `ai-reasoning`, `ai-tool-call`, `ai-task-list`, `ai-diff`, `ai-artifact`, `ai-approval`, `ai-sources`, `ai-suggestions`, `ai-context-meter`, `ai-loader`, `ai-prompt-input`, `ai-conversation` and `ai-core`
+- A shared **`AIState` contract** (`idle` -> `listening` -> `thinking` -> `streaming` -> `done` -> `error`) that every one of them reads, so a whole surface can be driven from one piece of state
+- **`siri-orb`**: layered conic gradients animated through a registered `--angle` property, reacting to real microphone loudness
+
+### Templates
+
+- New **[Templates](/docs/templates)** section: a whole product surface installed in one command, with every component it composes pulled in as a registry dependency
+- **[Chat Template](/docs/templates/chat)** - sidebar, transcript and composer, with a scripted agent that exercises every AI component. No model, no network call, no API key
+- Template pages lead with a live preview and screenshots rather than source, and list what installing gives you, read from the registry so it cannot drift
+
+### Docs, rebuilt
+
+- **Component pages** split: the documentation scrolls, the component stays pinned beside it in an iframe, so the viewport switcher shows what a phone would actually show
+- **Block pages** keep every control on the block it belongs to (Preview/Code, viewport, install command, add to bundle, Open in v0) because a page documenting five heroes cannot answer "the code of which one?"
+- **Masonry indexes** for components and blocks, each card as tall as its own demo
+- A **file tree** beside the source on block pages, keyed by the path each file lands at after installing
+
+### Fixes worth knowing about
+
+- `text-primary` was invisible ink in both themes: `primary` is a surface here, not an accent. It affected an icon chip, a bento highlight, two link variants, a skeleton, and **ten focus rings across six components**
+- Buttons had no pointer cursor after Tailwind v4 dropped it from Preflight
+- Block sources never resolved in the docs, so no block ever showed its own code
+- The chat template on a phone: the composer was cut off, the orb avatar was clipped, and there was no way to change conversation
+
+</ChangelogEntry>
+
+## 3.5.0
+
+<ChangelogEntry date="Jun 11, 2026" version="3.5.0" title="Theme Studio, Installable Themes & Accessibility">
+
+### Theme Studio
+
+- New **[Playground](/playground)**: a draggable, infinite-canvas board previewing all 70 component demos with your theme applied live
+- Dialkit-style inspector with palette, light/dark, font, neutral tint, a continuous radius scrubber, and an accent lightness scrubber
+- Component search and one-click board re-centering
+
+### Installable Themes & Presets
+
+- Six **`registry:theme`** items (`theme-candy` … `theme-green`) installable in any shadcn project — full token set, light and dark, Radix and Base UI compatible
+- **SmoothUI presets**: shareable codes (`s1.…`) that round-trip the entire studio state via URL, and install as on-the-fly custom themes through `theme-custom-<code>.json`
+- Per-palette [shadcn/create](https://ui.shadcn.com/create) preset mapping, labeled as approximation
+
+### Accessibility & Quality
+
+- **100% `prefers-reduced-motion` compliance**: every animated block now renders statically under reduced motion (WCAG 2.1 SC 2.3.3)
+- Fixed real accessibility violations caught by new tests: unlabeled logo links, unlabeled carousel buttons, invalid `<dl>` structure
+- All images across the library are now non-draggable, so drag interactions never fight browser ghost-drags
+
+### Registry & Infrastructure
+
+- Registry content rewriting: installed components and blocks now ship with fully resolvable imports (no more workspace specifiers leaking)
+- Blocks correctly typed as `registry:block`; new `lib` (animation constants) and `data` items; AI **skill** item installable at `/r/skill.json`
+- Test suite grew from 106 to 186 tests (every block and component covered) with coverage gates in CI, plus typecheck and registry-validation CI jobs
+
+</ChangelogEntry>
+
+## 3.4.0
+
+<ChangelogEntry date="Mar 7, 2026" version="3.4.0" title="AI-First Developer Experience">
+
+### AI Integration
+
+- Added **REST API** with 6 endpoints under `/api/v1/` for component discovery, search, and suggestions
+- Added **OpenAPI 3.1 spec** at `/openapi.json` for programmatic access
+- Added **`/llms-components.json`** machine-readable component catalog endpoint
+- Enhanced **`/llms-full.txt`** with structured component metadata
+- Added structured `smoothui` metadata to all **84 component and block** `package.json` files
+- Added **AI Integration** and **REST API reference** docs pages
+- Added animated **AI-Native** section to the landing page
+
+### New Components
+
+- Added **Book** component inspired by Vercel Geist
+- Added **Exposure Slider** component inspired by iOS Camera
+
+### Documentation
+
+- Added per-component **accessibility documentation** across all components
+- Added **bundle size badges** to component docs and gallery
+- Added **Astro**, **Vite**, **Remix**, and **TanStack Start** framework integration guides
+- Added **visual component gallery** with filtering, search, and live previews
+- Added **community section** with component requests and showcase
+
+### Fixes
+
+- Resolved 12 Dependabot vulnerability alerts
+- Fixed recently-modified indicator system and sorted sidebar components
+
+</ChangelogEntry>
+
+## 3.3.0
+
+<ChangelogEntry date="Feb 21, 2026" version="3.3.0" title="New Components & Enhancements">
+
+### New Components
+
+- Added **Gooey Popover** component with SVG filter effects and GSAP
+- Added **Agent Avatar** component for AI assistant interfaces
+- Added **Animated Avatar Group** component with stacking animations
+- Added **Animated Tooltip** component with spring transitions
+- Added **Scrubber** component integrated with Grid Loader demo
+
+### Enhancements
+
+- Enhanced **Grid Loader** with blur, gap, rounded props and redesigned customizer panel
+- Added theme tokens for Scrubber, Grid Loader customizer, and reference links
+- Added Vercel OSS Program badge and Speed Insights
+- Improved structured data across docs site
+
+### Fixes
+
+- Fixed TweetCard 100% error rate on Vercel (removed isomorphic-dompurify)
+- Reduced Vercel function GB-Hours usage
+
+</ChangelogEntry>
+
+## 3.2.0
+
+<ChangelogEntry date="Feb 6, 2026" version="3.2.0" title="CLI & Grid Loader">
+
+### New Components
+
+- Added **Grid Loader** component with 65 preset patterns
+
+### CLI
+
+- Added standalone **SmoothUI CLI** with ASCII logo header and improved TUI
+- Redesigned installer component with dual CLI tabs
+- Added custom Shiki themes and global package manager state
+
+### Blog & Landing
+
+- Added interactive tutorial blog section
+- Added CLI announcement badge to hero section
+
+### Fixes
+
+- Patched Dependabot security vulnerabilities
+
+</ChangelogEntry>
+
+## 3.1.0
+
+<ChangelogEntry date="Jan 29, 2026" version="3.1.0" title="New Components & Blocks Expansion">
+
+### New Components
+
+- Added **Magnetic Button** component with cursor-following magnetic effect and shadcn-style button variants
+- Added **Notification Badge** component with dot, count, and status variants
+- Added **Skeleton Loader** component with shimmer, pulse, and wave animation variants
+- Added **Animated Tabs** component with underline, pill, and segment style variants
+- Added **Animated Toggle** component with morph and icon transition variants
+
+### New Blocks
+
+- Added **FAQ 3** block with searchable questions and filter animations
+- Added **FAQ 4** block with categorized questions and tab navigation
+- Added **Footer 3** mega footer block with newsletter signup
+- Added **Footer 4** minimal single-row footer block
+- Added **Logo Cloud 3** block with infinite marquee and pause on hover
+- Added **Logo Cloud 4** block with interactive grid and hover effects
+
+</ChangelogEntry>
+
+## 3.0.6
+
+<ChangelogEntry date="Jan 20, 2026" version="3.0.6" title="Accessibility & Motion Reduction">
+
+- Enhanced accessibility and keyboard navigation across all input components
+- Added motion reduction support (`prefers-reduced-motion`) across components
+- Integrated motion reduction in AI Branch component
+
+</ChangelogEntry>
+
+## 3.0.5
+
+<ChangelogEntry date="Jan 13, 2026" version="3.0.5" title="TweetCard Component">
+
+- Added **TweetCard** component for displaying Twitter/X posts with media support
+- Enhanced TweetCard security with DOMPurify sanitization
+
+</ChangelogEntry>
+
+## 3.0.4
+
+<ChangelogEntry date="Jan 5, 2026" version="3.0.4" title="SwitchboardCard & Header 4">
+
+- Added **SwitchboardCard** component with animated light grid effect
+- Added **Header 4** block with interactive 3D grid hero section
+- Enhanced dropdown components with portal rendering and position handling
+
+</ChangelogEntry>
+
+## 3.0.3
+
+<ChangelogEntry date="Dec 30, 2025" version="3.0.3" title="Searchable Dropdown">
+
+- Added **Searchable Dropdown** component with search filtering and keyboard navigation
+- Improved Wave Text animation performance
+
+</ChangelogEntry>
+
+## 3.0.2
+
+<ChangelogEntry date="Dec 26, 2025" version="3.0.2" title="New Components & Enhancements">
+
+- Added GlowHover component with cursor-following glow effect - generic and reusable component that works with any React element (cards, buttons, etc.)
+- Added InfiniteSlider component for smooth, infinite scrolling with customizable speed and direction
+- Added ReviewsCarousel component for displaying testimonials with smooth animations and keyboard navigation
+- Enhanced AppleInvites component with responsive sizing and styling support
+- Improved RSS feed processing for blocks with better categorization and date extraction
+- Optimized image loading across components with enhanced getImageKitUrl options
+- Refactored ScrollableCardStack component to use images instead of videos for better performance
+- Fixed GitHub Stars Animation component issues
+
+</ChangelogEntry>
+
+## 3.0.1
+
+<ChangelogEntry date="Nov 27, 2025" version="3.0.1" title="RSS Feed, Safari Fix & Sponsors Page">
+
+- Added RSS feed integration using @wandry/analytics-sdk for component registry updates
+- Fixed Safari rendering bug in Siri Orb component with improved mask-radius handling
+- Created dedicated sponsors page with tier-based sections (Velocity, Supporters, Own Projects)
+- Enhanced sponsor display components with rotation and empty state handling
+
+</ChangelogEntry>
+
+## 3.0.0
+
+<ChangelogEntry date="Nov 5, 2025" version="3.0.0" title="Monorepo Remake">
+
+- Complete monorepo restructure with improved organization and maintainability
+- Migrated to Next.js 16 with latest features and performance improvements
+- Integrated Fumadocs for better documentation experience
+- Added Ultracite for enhanced code quality and tooling
+- Implemented Biome for fast linting and formatting
+- Improved build system and package management
+- Enhanced developer experience with better TypeScript configuration
+- Updated all dependencies to latest stable versions
+
+</ChangelogEntry>
+
+## 2.9.0
+
+<ChangelogEntry date="Sep 16, 2025" version="2.9.0" title="New Blocks Sections & Enhanced Sidebar Filter">
+
+- New Logo Clouds, Stats, Team, Footer, and FAQs blocks sections
+- Enhanced sidebar filter system with All, Components, and Blocks categories
+- Improved navigation with conditional sidebar content
+- Better content organization separating components from blocks
+
+</ChangelogEntry>
+
+## 2.8.0
+
+<ChangelogEntry date="Sep 8, 2025" version="2.8.0" title="Enhanced Search & Discovery System">
+
+- New comprehensive search system with keyboard shortcuts and real-time results
+- Advanced tag-based component discovery with categorized organization
+- New tag pages with related components and category information
+- Enhanced component search dialog with popular tags and smart suggestions
+
+</ChangelogEntry>
+
+## 2.7.0
+
+<ChangelogEntry date="Aug 29, 2025" version="2.7.0" title="shadcn CLI v3 Registry & MCP Support">
+
+- Full compatibility with shadcn CLI v3 namespace system
+- New registry system with automatic dependency management
+- MCP (Model Context Protocol) support for AI assistants
+- Enhanced documentation with comprehensive installation guides
+
+</ChangelogEntry>
+
+## 2.6.0
+
+<ChangelogEntry date="Aug 14, 2025" version="2.6.0" title="AI Components & Enhanced Navigation">
+
+- New AI section with AI-powered components
+- New components: AI Input, AI Branch, Scrollable Card Stack, Rich Popover
+- New AI menu in the landing page navigation
+
+</ChangelogEntry>
+
+## 2.0.0
+
+<ChangelogEntry date="Jun 18, 2025" version="2.0.0" title="Major Design Update">
+
+- New Design System and website look
+- New mascot called Smoothy
+- Props documentation
+- Color switcher
+- Refine shadcn/ui installation
+
+</ChangelogEntry>
+
+## 1.0.0
+
+<ChangelogEntry date="Feb 04, 2025" version="1.0.0" title="Initial Release">
+
+- Initial release of SmoothUI
+- Core component library with React and Framer Motion
+- Basic documentation and examples
+- CLI tool for component installation
+
+</ChangelogEntry>

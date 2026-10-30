@@ -1,0 +1,52 @@
+---
+title: Scrubber
+description: Animated React scrubber slider component with spring-physics thumb, label, value display, and tick marks for design tools.
+icon: SlidersHorizontal
+dependencies:
+  - motion.dev
+references: ["https://joshpuckett.me/dialkit"]
+installer: scrubber
+---
+
+## Features
+
+- Dark, self-contained slider with built-in label and value display
+- Animated thumb that appears on hover and drag with spring physics
+- Subtle scrub indicator for position feedback at rest
+- Configurable tick marks for visual reference
+- Keyboard accessible (arrow keys, Home, End)
+- Supports controlled and uncontrolled usage
+- Respects `prefers-reduced-motion`
+
+## Accessibility
+
+### Keyboard Interactions
+
+| Key | Description |
+|-----|-------------|
+| `ArrowRight` / `ArrowUp` | Increases the value by one step |
+| `ArrowLeft` / `ArrowDown` | Decreases the value by one step |
+| `Home` | Sets the value to the minimum |
+| `End` | Sets the value to the maximum |
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `role="slider"` | Track element | Identifies the component as a slider |
+| `aria-label` | Track element | Provides an accessible name (uses the `label` prop) |
+| `aria-valuemin` | Track element | Communicates the minimum value |
+| `aria-valuemax` | Track element | Communicates the maximum value |
+| `aria-valuenow` | Track element | Communicates the current value |
+| `tabIndex={0}` | Track element | Makes the slider focusable |
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the thumb capsule animation uses instant transitions instead of spring physics.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/scrubber/index.tsx"
+  name="ScrubberProps"
+/>

@@ -1,0 +1,32 @@
+---
+title: Infinite Slider
+description: Seamless infinite scrolling marquee for React with customizable speed and pause-on-hover. Perfect for logo carousels, testimonials, and brand showcases.
+icon: MoveHorizontal
+dependencies:
+  - motion.dev
+  - react-use-measure
+installer: infinite-slider
+---
+
+## Features
+
+- Smooth infinite scrolling animation
+- Customizable speed and gap
+- Pause on hover support
+- Horizontal and vertical directions
+- Reverse direction option
+- Seamless loop without jumps
+
+## Accessibility
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the scrolling animation is stopped and the translation is reset to 0, displaying the content statically.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/infinite-slider/index.tsx"
+  name="InfiniteSliderProps"
+/>
+

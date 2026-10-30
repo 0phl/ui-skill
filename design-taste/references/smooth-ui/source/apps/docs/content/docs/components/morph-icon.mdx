@@ -1,0 +1,78 @@
+---
+title: Morph Icon
+description: An animated SVG icon that morphs between two states by animating path and shape geometry directly, with no path-morph library.
+icon: Shapes
+dependencies:
+  - motion.dev
+installer: morph-icon
+---
+
+## Features
+
+Eight ready-made morphs driven by a single `active` boolean. Geometry attributes animate directly — no path-morph library. Size, stroke, color, and duration are tunable; pass `label` when the icon should be announced.
+
+## Variants
+
+Click the icon in the panel to flip `active`.
+
+### Sidebar
+
+Collapsed and expanded rail.
+
+### List
+
+Stacked lines that open into a list.
+
+### Grid
+
+Cells that rearrange into a grid.
+
+### Compact
+
+Dense layout cue.
+
+### Menu
+
+Hamburger that opens.
+
+### Search
+
+Magnifier that settles into place.
+
+### Play
+
+Play / pause morph.
+
+### Check
+
+Empty mark that draws a check.
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `aria-hidden="true"` | `<svg>` | Applied when no `label` is passed, hiding a purely decorative icon from assistive technology |
+| `role="img"` | `<svg>` | Applied when `label` is passed, exposing the icon as a single accessible image |
+| `<title>` | `<svg>` child | Provides the accessible name for the icon when `label` is passed |
+
+### Keyboard Interactions
+
+This component renders a static graphic with no interactive elements of its own; it has no keyboard interactions. Wrap it in a `<button>` or other interactive element to make it actionable, and drive the `active` prop from that element's state.
+
+### Screen Reader
+
+- Without a `label`, the icon is `aria-hidden` and is skipped entirely by screen readers — pair it with visible or accessible text on its container.
+- With a `label`, the icon is announced as an image with that label as its accessible name.
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, all geometry transitions snap instantly between states with `duration: 0`.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/morph-icon/index.tsx"
+  name="MorphIconProps"
+/>

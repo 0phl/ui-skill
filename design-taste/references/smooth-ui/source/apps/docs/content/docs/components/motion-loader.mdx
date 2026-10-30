@@ -1,0 +1,90 @@
+---
+title: Motion Loader
+description: One loader component with twelve animated variants — orbit, newton cradle, pendulum, hourglass and more — all resolution independent and driven by transform and opacity only.
+icon: LoaderCircle
+dependencies:
+  - motion.dev
+installer: motion-loader
+---
+
+## Features
+
+Twelve loaders from a single install, switched with `variant`. Every one animates `transform` and `opacity` only. Colour inherits `currentColor` unless you pass `color`; `speed` tunes the loop; `label` feeds a polite live region.
+
+## Variants
+
+### Orbit
+
+A dot circling a faint track ring.
+
+### Newton Cradle
+
+Five hanging balls; the outer ones swing in turn.
+
+### Pendulum
+
+A single arm swinging with an ease-in-out arc.
+
+### Hourglass
+
+Hourglass glyph flipping every half cycle.
+
+### Morph Ring
+
+Two counter-rotating dashed arcs with a scale pulse.
+
+### Square Snake
+
+A square travelling the four corners of a 2×2 grid.
+
+### Comet
+
+A head dot with a fading four-dot tail sweeping the circle.
+
+### Radar
+
+A conic sweep rotating inside a circular mask.
+
+### Cube Flip
+
+A square flipping across both axes in perspective.
+
+### Wave Bars
+
+Five bars scaling vertically with a stagger.
+
+### Breathing Glow
+
+A blurred halo breathing around a solid core.
+
+### Dot Ring
+
+Eight dots fading in sequence around a circle.
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `role="status"` | Loader wrapper | Marks the loader as a status region so assistive technologies observe it |
+| `aria-live="polite"` | Loader wrapper | Announces the loading state without interrupting the user |
+| `aria-label` | Loader wrapper | Names the region from the `label` prop |
+| `sr-only` text node | Inside the wrapper | Gives the live region announceable text content |
+
+### Screen Reader
+
+- The loader is a labelled live region: mounting it announces the `label` politely, and unmounting it silences the region.
+- Give each loader a specific label (`"Loading results"`, `"Saving changes"`) rather than the generic default when several can appear on the same screen.
+- The loader is not focusable and adds nothing to the tab order.
+
+### Reduced Motion
+
+This component respects `prefers-reduced-motion` via `useReducedMotion` from Motion. When reduced motion is preferred, every variant renders a single static frame — no `animate` or `transition` props are passed, so nothing loops. The wrapper still exposes `role="status"`, `aria-live="polite"` and the label, so the loading state remains fully announced.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/motion-loader/index.tsx"
+  name="MotionLoaderProps"
+/>

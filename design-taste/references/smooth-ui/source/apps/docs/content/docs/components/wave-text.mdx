@@ -1,0 +1,62 @@
+---
+title: Wave Text
+description: Animated React wave text component with smooth character-by-character wave effect, customizable amplitude, and GPU-accelerated motion.
+icon: Type
+dependencies:
+  - motion.dev
+installer: wave-text
+---
+
+## Features
+
+- Smooth continuous wave animation across text
+- Customizable amplitude, duration, and stagger delay
+- Natural bounce effect with custom easing
+- GPU-accelerated for optimal performance
+- Lightweight and easy to use
+- Built with Motion
+
+## Accessibility
+
+### Reduced Motion
+
+Uses `useReducedMotion` from `motion/react`. When enabled, the wave animation is fully disabled — characters render statically with no vertical movement and `duration: 0` transitions.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/wave-text/index.tsx"
+  name="WaveTextProps"
+/>
+
+## Usage
+
+```tsx
+import WaveText from "@repo/smoothui/components/wave-text";
+
+// Basic usage
+<WaveText>Hello World</WaveText>
+
+// Customized wave
+<WaveText amplitude={12} duration={1.0} staggerDelay={0.04}>
+  SmoothUI Components
+</WaveText>
+```
+
+## Examples
+
+### Large Bold Text
+```tsx
+<div className="font-bold text-3xl">
+  <WaveText amplitude={12} duration={1.0} staggerDelay={0.04}>
+    SmoothUI Components
+  </WaveText>
+</div>
+```
+
+### Subtle Wave
+```tsx
+<WaveText amplitude={6} duration={1.4} staggerDelay={0.06}>
+  Smooth wave animations for your text!
+</WaveText>
+```

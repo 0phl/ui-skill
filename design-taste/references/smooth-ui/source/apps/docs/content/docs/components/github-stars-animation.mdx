@@ -1,0 +1,44 @@
+---
+title: GitHub Stars Animation
+description: Display GitHub stargazers with animated avatars and a countdown star counter. Perfect for hero sections and landing pages.
+icon: Star
+dependencies:
+  - motion.dev
+  - lucide.dev
+installer: github-stars-animation
+---
+
+## Features
+
+- Animated countdown from 0 to star count
+- Displays avatars of users who starred the repository
+- Staggered entrance animations for avatars
+- Fetches data from GitHub API or custom endpoint
+- Supports both client-side and server-side data fetching
+- Loading and error states
+- Perfect for hero sections and landing pages
+
+## Accessibility
+
+### Screen Reader
+
+- Each stargazer avatar link has an `aria-label` with the username for screen readers.
+- Avatar images include descriptive `alt` text.
+- The star count is displayed as plain text, readable by screen readers.
+- External profile links open in new tabs with secure `rel` attributes.
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the countdown animation is skipped (the final count is shown instantly), avatar entrance animations are disabled, and scale effects on hover are removed.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/github-stars-animation/index.tsx"
+  name="GitHubStarsAnimationProps"
+/>
+
+
+
+
+

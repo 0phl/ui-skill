@@ -1,0 +1,31 @@
+---
+title: Animated Tags
+description: Animated React tag components with smooth add, remove, and hover effects powered by Motion for interactive filtering and labeling.
+icon: Tag
+dependencies:
+  - motion.dev
+  - lucide.dev
+installer: animated-tags
+---
+
+## Features
+
+- Smooth tag animations
+- Interactive hover effects
+- Customizable tag styling
+- Built with Framer Motion
+- Responsive layout
+- Add/remove animations
+
+## Accessibility
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, tag add/remove slide and blur animations are disabled, and tags appear/disappear instantly.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/animated-tags/index.tsx"
+  name="AnimatedTagsProps"
+/>

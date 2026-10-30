@@ -1,0 +1,101 @@
+"use client";
+
+import type { BlockCategoryMeta } from "@docs/lib/blocks-gallery";
+import { motion, useReducedMotion } from "motion/react";
+import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
+
+import ctaCover from "./covers/cta.webp";
+import faqsCover from "./covers/faqs.webp";
+import featuresCover from "./covers/features.webp";
+import footerCover from "./covers/footer.webp";
+import heroCover from "./covers/hero.webp";
+import logoCloudsCover from "./covers/logo-clouds.webp";
+import pricingCover from "./covers/pricing.webp";
+import statsCover from "./covers/stats.webp";
+import teamCover from "./covers/team-sections.webp";
+import testimonialCover from "./covers/testimonial.webp";
+import { MasonryGrid } from "./masonry-grid";
+
+export interface BlockGalleryProps {
+  categories: BlockCategoryMeta[];
+}
+
+/**
+ * Cover art, one per category.
+ *
+ * Stills rather than live demos: a block is a full-width page section, and
+ * scaling one into a card column squashed it past the point of telling you
+ * anything. A screenshot is cropped to what the block actually looks like, and
+ * each keeps its own proportions — a logo cloud is a strip, a hero is most of a
+ * page — which is what gives the masonry its rhythm.
+ */
+const COVERS: Record<string, StaticImageData> = {
+  cta: ctaCover,
+  faqs: faqsCover,
+  features: featuresCover,
+  footer: footerCover,
+  hero: heroCover,
+  "logo-clouds": logoCloudsCover,
+  pricing: pricingCover,
+  stats: statsCover,
+  "team-sections": teamCover,
+  testimonial: testimonialCover,
+};
+
+const EASE_OUT = [0.23, 1, 0.32, 1] as const;
+const MAX_STAGGER = 0.24;
+const STAGGER_STEP = 0.03;
+
+/**
+ * The blocks index: one card per category, led by a real block from it.
+ */
+export const BlockGallery = ({ categories }: BlockGalleryProps) => {
+  const shouldReduceMotion = useReducedMotion();
+
+  const tiles = categories.map((category, index) => {
+    const cover = COVERS[category.slug];
+
+    return {
+      key: category.slug,
+      node: (
+        <motion.article
+          animate={{ opacity: 1, y: 0 }}
+          className="relative flex h-full flex-col overflow-hidden rounded-xl bg-muted"
+          initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
+          transition={
+            shouldReduceMotion
+              ? { duration: 0 }
+              : {
+                  delay: Math.min(index * STAGGER_STEP, MAX_STAGGER),
+                  duration: 0.25,
+                  ease: EASE_OUT,
+                }
+          }
+        >
+          {cover ? (
+            <Image
+              alt=""
+              className="w-full"
+              placeholder="blur"
+              sizes="(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 100vw"
+              src={cover}
+            />
+          ) : null}
+          <p className="mt-auto flex h-11 items-center px-4 font-medium text-foreground text-sm">
+            <span className="truncate">{category.title}</span>
+          </p>
+          <Link
+            aria-label={`${category.title}, ${category.count} blocks`}
+            className="absolute inset-0 z-10"
+            href={category.href}
+          />
+        </motion.article>
+      ),
+    };
+  });
+
+  return (
+    <MasonryGrid className="not-prose" gap={8} maxColumns={3} tiles={tiles} />
+  );
+};

@@ -1,0 +1,152 @@
+"use client";
+
+import type { ContributorInfo } from "@docs/lib/git-contributor";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@repo/shadcn-ui/components/ui/tooltip";
+import Image from "next/image";
+import { IconBranchOutFill24, IconUserFill24 } from "nucleo-core-fill-24";
+
+interface ContributorProps {
+  contributors?: ContributorInfo[];
+  creator: {
+    name: string;
+    url?: string;
+    avatar?: string;
+  };
+}
+
+export const Contributor = ({
+  creator,
+  contributors = [],
+}: ContributorProps) => {
+  const otherContributors = contributors.filter((c) => c.name !== creator.name);
+
+  return (
+    <div className="not-prose mt-6 flex flex-col gap-2">
+      {/* Created by section */}
+      <div className="flex flex-col gap-2">
+        <div className="flex items-center gap-2">
+          <IconUserFill24 className="size-4 text-muted-foreground" />
+          <p className="text-muted-foreground text-sm">Created by</p>
+        </div>
+        <div className="pl-3.5">
+          {/* Creator - more prominent */}
+          {creator.url ? (
+            <a
+              className="flex items-center gap-2"
+              href={creator.url}
+              rel="noopener"
+              target="_blank"
+            >
+              {creator.avatar ? (
+                <div className="relative h-6 w-6 overflow-hidden rounded-full border border-border">
+                  <Image
+                    alt={`${creator.name}'s avatar`}
+                    className="object-cover"
+                    draggable={false}
+                    height={24}
+                    src={creator.avatar}
+                    width={24}
+                  />
+                </div>
+              ) : (
+                <div className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full border border-border bg-muted">
+                  <IconUserFill24 className="h-3 w-3 text-muted-foreground" />
+                </div>
+              )}
+              <span className="font-normal text-muted-foreground text-sm">
+                {creator.name}
+              </span>
+            </a>
+          ) : (
+            <div className="flex items-center gap-2">
+              {creator.avatar ? (
+                <div className="relative h-6 w-6 overflow-hidden rounded-full border border-border">
+                  <Image
+                    alt={`${creator.name}'s avatar`}
+                    className="object-cover"
+                    draggable={false}
+                    height={24}
+                    src={creator.avatar}
+                    width={24}
+                  />
+                </div>
+              ) : (
+                <div className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full border border-border bg-muted">
+                  <IconUserFill24 className="h-3 w-3 text-muted-foreground" />
+                </div>
+              )}
+              <span className="font-light text-muted-foreground text-sm">
+                {creator.name}
+              </span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Improved by section - separate */}
+      {otherContributors.length > 0 && (
+        <div className="mt-6 flex flex-col gap-2">
+          <div className="flex items-center gap-2">
+            <IconBranchOutFill24 className="size-4 text-muted-foreground" />
+            <p className="text-muted-foreground text-sm">Improved by</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 pl-3.5">
+            {otherContributors.map((contributor, index) => {
+              const style = {
+                marginLeft: index > 0 ? "-4px" : "0",
+                zIndex: otherContributors.length - index,
+              };
+              const thumb = contributor.avatar ? (
+                <Image
+                  alt={`${contributor.name}'s avatar`}
+                  className="object-cover"
+                  draggable={false}
+                  height={24}
+                  src={contributor.avatar}
+                  width={24}
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-muted">
+                  <IconUserFill24 className="h-3 w-3 text-muted-foreground" />
+                </div>
+              );
+              const className =
+                "relative h-6 w-6 overflow-hidden rounded-full border border-border transition-transform hover:z-10 hover:scale-110";
+
+              return (
+                <Tooltip key={`${contributor.email}-${index}`}>
+                  {contributor.url ? (
+                    <TooltipTrigger asChild>
+                      <a
+                        className={className}
+                        href={contributor.url}
+                        rel="noopener"
+                        style={style}
+                        target="_blank"
+                      >
+                        {thumb}
+                      </a>
+                    </TooltipTrigger>
+                  ) : (
+                    <TooltipTrigger asChild>
+                      <div className={className} style={style}>
+                        {thumb}
+                      </div>
+                    </TooltipTrigger>
+                  )}
+                  <TooltipContent>
+                    <p>{contributor.name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};

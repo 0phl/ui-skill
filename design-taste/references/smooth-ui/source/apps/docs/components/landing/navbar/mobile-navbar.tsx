@@ -1,0 +1,292 @@
+"use client";
+
+import Logo from "@docs/components/logo";
+import { Button } from "@docs/components/smoothbutton";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import Link from "next/link";
+import {
+  IconBoltFill24,
+  IconBoxFill24,
+  IconColorPaletteFill24,
+  IconCompassFill24,
+  IconGrid2Fill24,
+  IconHeartFill24,
+  IconLayersFill24,
+  IconMenuFill24,
+  IconSparkleFill24,
+  IconTextFill24,
+  IconUserFill24,
+  IconWandSparkleFill24,
+  IconWindowCodeFill24,
+  IconXmarkFill24,
+} from "nucleo-core-fill-24";
+import { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/utils";
+import { GithubStars } from "./github-stars";
+
+interface MobileNavbarProps {
+  className?: string;
+}
+
+export function MobileNavbar({ className }: MobileNavbarProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node;
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  return (
+    <div className={cn("mobile-navbar", className)}>
+      <div className="mobile-navbar-header">
+        <a className="flex gap-2" href="/">
+          <Logo />
+        </a>
+        <Button
+          aria-label="Toggle menu"
+          className="mobile-menu-button"
+          onClick={() => setIsOpen(!isOpen)}
+          ref={buttonRef}
+          size="icon"
+          variant="ghost"
+        >
+          {isOpen ? (
+            <IconXmarkFill24 size={20} />
+          ) : (
+            <IconMenuFill24 size={20} />
+          )}
+        </Button>
+      </div>
+
+      <AnimatePresence>
+        {isOpen ? (
+          <motion.div
+            animate={
+              shouldReduceMotion
+                ? { opacity: 1 }
+                : { opacity: 1, scale: 1, y: 0 }
+            }
+            className="mobile-navbar-menu"
+            exit={
+              shouldReduceMotion
+                ? { opacity: 0, transition: { duration: 0 } }
+                : { opacity: 0, scale: 0.95, y: -10 }
+            }
+            initial={
+              shouldReduceMotion
+                ? { opacity: 0 }
+                : { opacity: 0, scale: 0.95, y: -10 }
+            }
+            ref={menuRef}
+            transition={
+              shouldReduceMotion
+                ? { duration: 0 }
+                : { duration: 0.2, ease: [0.22, 1, 0.36, 1] }
+            }
+          >
+            <motion.div
+              animate={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }
+              }
+              className="mobile-navbar-section"
+              data-nav-section="components"
+              initial={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }
+              }
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0 }
+                  : { delay: 0.05, duration: 0.2 }
+              }
+            >
+              <div className="mobile-navbar-section-title">
+                <IconGrid2Fill24 size={16} />
+                Components
+              </div>
+              <div className="mobile-navbar-links">
+                <Link
+                  className="mobile-navbar-link"
+                  href="/docs/components/scroll-reveal-paragraph"
+                >
+                  <IconTextFill24 size={16} />
+                  Text Components
+                </Link>
+                <Link
+                  className="mobile-navbar-link"
+                  href="/docs/components/accordion"
+                >
+                  <IconLayersFill24 size={16} />
+                  Basic Components
+                </Link>
+                <Link
+                  className="mobile-navbar-link"
+                  href="/docs/components/otp-slots"
+                >
+                  <IconGrid2Fill24 size={16} />
+                  UI Components
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              animate={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }
+              }
+              className="mobile-navbar-section"
+              data-nav-section="blocks"
+              initial={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }
+              }
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0 }
+                  : { delay: 0.1, duration: 0.2 }
+              }
+            >
+              <div className="mobile-navbar-section-title">
+                <IconBoltFill24 size={16} />
+                Blocks
+              </div>
+              <div className="mobile-navbar-links">
+                <Link className="mobile-navbar-link" href="/docs/blocks/hero">
+                  <IconSparkleFill24 size={16} />
+                  Hero Blocks
+                </Link>
+                <Link
+                  className="mobile-navbar-link"
+                  href="/docs/blocks/pricing"
+                >
+                  <IconBoxFill24 size={16} />
+                  Pricing Blocks
+                </Link>
+                <Link
+                  className="mobile-navbar-link"
+                  href="/docs/blocks/testimonial"
+                >
+                  <IconUserFill24 size={16} />
+                  Testimonial Blocks
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              animate={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }
+              }
+              className="mobile-navbar-section"
+              data-nav-section="templates"
+              initial={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }
+              }
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0 }
+                  : { delay: 0.15, duration: 0.2 }
+              }
+            >
+              <div className="mobile-navbar-section-title">
+                <IconWindowCodeFill24 size={16} />
+                Templates
+              </div>
+              <div className="mobile-navbar-links">
+                <Link className="mobile-navbar-link" href="/docs/templates">
+                  <IconWindowCodeFill24 size={16} />
+                  Browse templates
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              animate={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }
+              }
+              className="mobile-navbar-section"
+              data-nav-section="resources"
+              initial={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }
+              }
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0 }
+                  : { delay: 0.18, duration: 0.2 }
+              }
+            >
+              <div className="mobile-navbar-section-title">
+                <IconCompassFill24 size={16} />
+                Resources
+              </div>
+              <div className="mobile-navbar-links">
+                <Link className="mobile-navbar-link" href="/playground">
+                  <IconColorPaletteFill24 size={16} />
+                  Playground
+                </Link>
+                <Link className="mobile-navbar-link" href="/blog">
+                  <IconTextFill24 size={16} />
+                  Blog
+                </Link>
+                <Link
+                  className="mobile-navbar-link"
+                  href="/docs/guides/sponsors"
+                >
+                  <IconHeartFill24 size={16} />
+                  Sponsors
+                </Link>
+                <a
+                  className="mobile-navbar-link"
+                  href="https://skills.smoothui.dev"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <IconWandSparkleFill24 size={16} />
+                  Skills
+                </a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              animate={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }
+              }
+              className="mobile-navbar-footer"
+              initial={
+                shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }
+              }
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0 }
+                  : { delay: 0.2, duration: 0.2 }
+              }
+            >
+              <GithubStars />
+            </motion.div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+    </div>
+  );
+}

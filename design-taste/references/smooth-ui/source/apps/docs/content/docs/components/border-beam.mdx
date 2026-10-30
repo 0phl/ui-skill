@@ -1,0 +1,70 @@
+---
+title: Border Beam
+description: A soft light comet that travels along an element's border, curving through every corner because it is a stroked dash on the outline path itself.
+icon: Frame
+dependencies:
+  - motion.dev
+installer: border-beam
+---
+
+## Features
+
+A soft light comet that travels along an element's border — curved by construction because it is a stroked dash on the outline path itself. Only `stroke-dashoffset` animates, so the beam slides through corners instead of pivoting across them.
+
+Scroll the sections below — the panel shows one configuration at a time.
+
+## Variants
+
+### Tight Corners
+
+`radius={6}` — the hardest case: a 90° swing inside six pixels, leaving square with the next edge.
+
+### Pill
+
+`radius={999}` — the tangent turns continuously, so there is no seam where the arc meets the straight run.
+
+### Squircle
+
+`radius="squircle"` — a squircle has no constant-radius arc at all, and the beam still tracks it.
+
+### Two Beams
+
+`beams={2}` — phase offsets along one path, so they stay half a lap apart at any duration.
+
+### Custom Colors
+
+`colorFrom` / `colorTo` — the tail fades in from one and the head burns out in the other.
+
+### Reverse
+
+`reverse` with `pauseOnHover` — counter-clockwise travel; hover to freeze mid-corner on fine-pointer devices.
+
+## Notes
+
+`radius="squircle"` draws the ring and the travel path as a continuous curve, but it does not clip the wrapper — a rectangular background on the same element would show square corners behind a squircle ring. Either leave the wrapper transparent, or clip the surface yourself (the [Squircle](/docs/components/squircle) component does exactly that).
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `aria-hidden="true"` | Border ring SVG | Hides the decorative gradient outline from assistive technologies |
+| `aria-hidden="true"` | Comet dashes | Hides the travelling lights from assistive technologies |
+
+### Screen Reader
+
+- The whole SVG overlay is `aria-hidden` and `pointer-events: none`, so it never intercepts clicks nor reaches the accessibility tree.
+- The wrapper adds no role or semantics: `children` keep whatever roles, labels and focus order they already had.
+- When you use the beam as a loading affordance, expose that state separately (for example `aria-busy` or a live region) — motion alone is not announced.
+
+### Reduced Motion
+
+This component respects `prefers-reduced-motion` via `useReducedMotion` from Motion. When reduced motion is preferred, no comet dashes are rendered and no frame loop starts; the border falls back to the same gradient stroke at full opacity, so the element keeps its highlighted look without any travel.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/border-beam/index.tsx"
+  name="BorderBeamProps"
+/>

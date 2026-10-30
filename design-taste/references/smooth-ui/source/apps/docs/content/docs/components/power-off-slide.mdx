@@ -1,0 +1,37 @@
+---
+title: Power Off Slide
+description: Animated React power-off slider component with iOS-style drag-to-confirm interaction, spring physics, and accessible states.
+icon: Power
+dependencies:
+  - motion.dev
+  - lucide.dev
+installer: power-off-slide
+---
+
+## Features
+
+- Drag to confirm interaction
+- Spring physics and rubber-banding
+- Accessible labels and states
+- Theming options
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `aria-disabled` | Drag handle | Indicates when the slider is disabled |
+| `tabIndex={0}` | Drag handle | Makes the handle focusable when not disabled |
+| `tabIndex={-1}` | Drag handle | Removes the handle from tab order when disabled |
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the drag interaction is disabled (`drag={false}`), the shimmer text animation stops, and the handle uses instant transitions.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/power-off-slide/index.tsx"
+  name="PowerOffSlideProps"
+/>

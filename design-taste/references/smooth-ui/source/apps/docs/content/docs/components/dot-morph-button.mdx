@@ -1,0 +1,28 @@
+---
+title: Dot Morph Button
+description: Animated React button component with morphing dot animations for idle, loading, and success states with ARIA accessibility support.
+icon: MousePointer
+dependencies:
+  - motion.dev
+installer: dot-morph-button
+---
+
+## Features
+
+- Morphing dot animations
+- States: idle, loading, success
+- Keyboard and ARIA support
+- Easy to theme
+
+## Accessibility
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the dot morph hover animation is disabled. The component also detects hover-capable devices and disables the hover effect on touch devices.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/dot-morph-button/index.tsx"
+  name="DotMorphButtonProps"
+/>

@@ -1,0 +1,35 @@
+---
+title: Dynamic Island
+description: Apple-inspired Dynamic Island React component with smooth spring animations. Expandable notification pill for alerts, music players, and status updates.
+icon: Square
+dependencies:
+  - motion.dev
+  - lucide.dev
+installer: dynamic-island
+---
+
+## Features
+
+- Expand/collapse with spring motion
+- Queue multiple messages
+- Supports icons and actions
+- Accessible announcements
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `aria-label` | View buttons | Describes each view option (e.g., "idle", "ring", "timer") |
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the spring layout transitions and content blur/scale entrance animations are disabled.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/dynamic-island/index.tsx"
+  name="DynamicIslandProps"
+/>

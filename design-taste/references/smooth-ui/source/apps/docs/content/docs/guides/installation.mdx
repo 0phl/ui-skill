@@ -1,0 +1,132 @@
+---
+title: Installation
+description: Learn how to install SmoothUI components using the SmoothUI CLI, shadcn CLI, or manual installation methods.
+---
+
+<FeatureCard title="Framework Integration Guides" variant="info">
+SmoothUI works with any React-compatible framework. Check out the dedicated setup guides:
+
+- **[Vite + React](/docs/guides/vite)** — The simplest setup for client-side React apps
+- **[Astro](/docs/guides/astro)** — Islands architecture with selective hydration
+- **[Remix](/docs/guides/remix)** — Full-stack SSR with React Router v7
+- **[TanStack Start](/docs/guides/tanstack-start)** — Type-safe full-stack with streaming SSR
+</FeatureCard>
+
+## Installation (SmoothUI CLI)
+
+<BodyText>
+The SmoothUI CLI provides an interactive way to browse and install components with automatic dependency resolution.
+</BodyText>
+
+<FeatureCard title="Base UI by default" variant="info">
+Owned SmoothUI primitives (button, dialog, checkbox, …) ship on **Base UI** by
+default (`/r/{name}.json` and `base-*` styles). Radix projects set a non-`base-*`
+style and point at `https://smoothui.dev/r/{style}/{name}.json`. See
+[Primitives](/docs/primitives).
+</FeatureCard>
+
+### Add Components
+
+<PackageManagerTabs
+  pnpm="pnpm dlx smoothui-cli@latest add siri-orb"
+  npm="npx smoothui-cli@latest add siri-orb"
+  yarn="yarn dlx smoothui-cli@latest add siri-orb"
+  bun="bunx smoothui-cli@latest add siri-orb"
+/>
+
+### Add Multiple Components
+
+<PackageManagerTabs
+  pnpm="pnpm dlx smoothui-cli@latest add siri-orb rich-popover float-input"
+  npm="npx smoothui-cli@latest add siri-orb rich-popover float-input"
+  yarn="yarn dlx smoothui-cli@latest add siri-orb rich-popover float-input"
+  bun="bunx smoothui-cli@latest add siri-orb rich-popover float-input"
+/>
+
+### Interactive Mode
+
+<PackageManagerTabs
+  pnpm="pnpm dlx smoothui-cli@latest add"
+  npm="npx smoothui-cli@latest add"
+  yarn="yarn dlx smoothui-cli@latest add"
+  bun="bunx smoothui-cli@latest add"
+/>
+
+### List Available Components
+
+<PackageManagerTabs
+  pnpm="pnpm dlx smoothui-cli@latest list"
+  npm="npx smoothui-cli@latest list"
+  yarn="yarn dlx smoothui-cli@latest list"
+  bun="bunx smoothui-cli@latest list"
+/>
+
+<FeatureCard title="Interactive Mode" variant="info">
+Run the add command without arguments to launch an interactive picker. Search and browse components by category, then select multiple components to install at once.
+</FeatureCard>
+
+---
+
+## Installation (shadcn Registry)
+
+<BodyText>
+SmoothUI is an official shadcn registry. Use the `@smoothui{:js}` namespace.
+Owned primitives ship on **Base UI** by default; Radix projects should use the
+style-aware registry URL.
+</BodyText>
+
+```json
+{
+  "style": "base-nova",
+  "registries": {
+    "@smoothui": "https://smoothui.dev/r/{style}/{name}.json"
+  }
+}
+```
+
+<FeatureCard title="Base by default" variant="info">
+Plain `@smoothui/...` installs get the Base twin. Set a non-`base-*` style plus
+the style-aware URL above for Radix — see [Primitives](/docs/primitives).
+</FeatureCard>
+
+### Install Components
+
+<BodyText>
+Install SmoothUI components using the shadcn CLI with the `@smoothui{:js}` namespace:
+</BodyText>
+
+<PackageManagerTabs
+  pnpm="pnpm dlx shadcn@latest add @smoothui/siri-orb"
+  npm="npx shadcn@latest add @smoothui/siri-orb"
+  yarn="yarn dlx shadcn@latest add @smoothui/siri-orb"
+  bun="bunx shadcn@latest add @smoothui/siri-orb"
+/>
+
+### Install Multiple Components
+
+<PackageManagerTabs
+  pnpm="pnpm dlx shadcn@latest add @smoothui/rich-popover @smoothui/float-input"
+  npm="npx shadcn@latest add @smoothui/rich-popover @smoothui/float-input"
+  yarn="yarn dlx shadcn@latest add @smoothui/rich-popover @smoothui/float-input"
+  bun="bunx shadcn@latest add @smoothui/rich-popover @smoothui/float-input"
+/>
+
+### Use Components
+
+<BodyText>
+Import and use the installed components in your React application:
+</BodyText>
+
+```tsx
+import { SiriOrb } from "@/components/smoothui/ui/SiriOrb"
+import { RichPopover } from "@/components/smoothui/ui/RichPopover"
+
+export default function App() {
+  return (
+    <div>
+      <SiriOrb size="200px" />
+      <RichPopover />
+    </div>
+  )
+}
+```

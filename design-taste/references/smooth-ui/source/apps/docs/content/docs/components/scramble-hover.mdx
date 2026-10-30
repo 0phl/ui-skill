@@ -1,0 +1,36 @@
+---
+title: Scramble Hover
+description: Animated text scramble effect on hover for React. Creates playful, Matrix-style character animations with customizable speed and duration. Built with Motion.
+icon: Type
+dependencies: []
+installer: scramble-hover
+---
+
+## Features
+
+- Character scrambling on hover with duration and speed controls
+- Works with headings and inline text
+- Smooth and performant
+- Built with Framer Motion
+- Accessible fallbacks
+
+## Accessibility
+
+### Reduced Motion
+
+Respects the `prefers-reduced-motion` media query. When enabled, the scramble animation is fully disabled and the original text is always shown.
+
+### Keyboard Support
+
+The component renders as a `<button>` element with `type="button"`, making it natively focusable and keyboard-accessible. The scramble effect triggers on focus and clears on blur.
+
+### Hover Device Detection
+
+Detects whether the user's device supports hover via the `(hover: hover) and (pointer: fine)` media query. On touch devices, hover-based animations are disabled to avoid stuck states.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/scramble-hover/index.tsx"
+  name="ScrambleHoverProps"
+/>

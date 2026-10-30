@@ -1,0 +1,51 @@
+---
+title: Glow Hover Cards
+description: Cards with a glowing hover effect that follows your cursor, creating an interactive spotlight effect.
+icon: Sparkles
+dependencies:
+  - motion.dev
+installer: glow-hover-card
+---
+
+## Features
+
+- Cursor-following glow effect using CSS mask-image
+- Customizable color themes per card (HSL)
+- Smooth animations and transitions
+- Accessible with reduced motion support
+- Performant GPU-accelerated effects
+
+## Accessibility
+
+### ARIA Attributes
+
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `aria-hidden="true"` | Glow overlay | Hides the decorative glow overlay from assistive technologies |
+
+### Screen Reader
+
+- The glow overlay is marked as `aria-hidden` and uses `pointer-events: none`, ensuring it does not interfere with screen readers or interaction.
+- The original card elements remain fully accessible.
+
+### Reduced Motion
+
+This component respects the `prefers-reduced-motion` media query via `useReducedMotion` from Motion. When reduced motion is preferred, the entire glow overlay is not rendered, pointer tracking is disabled, and no `will-change` hints are applied.
+
+## Props
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/glow-hover-card/index.tsx"
+  name="GlowHoverCardsProps"
+/>
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/glow-hover-card/index.tsx"
+  name="GlowHoverCardItem"
+/>
+
+<AutoTypeTable
+  path="../../packages/smoothui/components/glow-hover-card/index.tsx"
+  name="GlowHoverCardTheme"
+/>
+
