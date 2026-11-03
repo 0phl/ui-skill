@@ -1,6 +1,6 @@
 # Personal design taste profile
 
-Updated: 2026-10-30. Evidence: [Batch 001](batches/001.md), 21 files; [Batch 002](batches/002.md), 31 files; and [Batch 003](batches/003.md), 15 files: **67 submitted files total**. B001-15/B001-18 show one design at different resolutions; B002-07 is an exact-file repeat of B001-08. Paired themes, navigation variants, and related screen/component groups are tracked separately from independent examples. This profile remains open to correction and expansion.
+Updated: 2026-11-03. Evidence: [Batch 001](batches/001.md), 21 files; [Batch 002](batches/002.md), 31 files; and [Batch 003](batches/003.md), 15 files: **67 submitted files total**, plus [Batch 004](batches/004.md), one approved Seaversity Rental implementation capture: **68 archived images**. B001-15/B001-18 show one design at different resolutions; B002-07 is an exact-file repeat of B001-08. Paired themes, navigation variants, and related screen/component groups are tracked separately from independent examples. This profile remains open to correction and expansion.
 
 ## Confirmed by the user
 
@@ -13,8 +13,9 @@ Updated: 2026-10-30. Evidence: [Batch 001](batches/001.md), 21 files; [Batch 002
 | C05 | **Keep the skill flexible across themes, client brands, and design systems. Theme colors must follow the current user's requirements.** | Explicit follow-up. Applies to this skill and its use by any user; reference palettes must not become restrictions or defaults that override a project's theme. |
 | C06 | Cult UI's component design matches the user's taste; include its publicly reusable source as code references. | Explicit request linking [Cult UI](https://www.cult-ui.com/) and its [public repository](https://github.com/nolly-studio/cult-ui). This approves the overall design direction, not every component, effect or source default. See the [pinned code collection](cult-ui/README.md). C05 continues to govern theme choices. |
 | C07 | SmoothUI also matches the user's taste; include its public code with the same treatment as Cult UI. | Explicit request linking [SmoothUI](https://smoothui.dev/) and its [public repository](https://github.com/educlopez/smoothui). See the [pinned code collection](smooth-ui/README.md). Overall approval does not confirm every animation, component or default; C04 and C05 continue to govern implementation. |
+| C08 | The Seaversity Rental design created using this skill matches the user's taste and belongs in this library. | Explicit approval on 2026-11-03; see [B004-01 and the approval statement](batches/004.md). This is one approved implementation of B002-04/B003-15, not a new universal palette, font, framework, or set of pixel values. C04 and C05 remain in effect. |
 
-There are no confirmed favorite fonts, exact colors, spacing values, icon packages, fixed button positions, or preferred light/dark mode. Theme flexibility itself is confirmed. No explicit visual dislikes have been supplied. Cult UI and SmoothUI add inspectable implementation examples for composition, controls and motion; neither source collection has been rendered or tested here as a complete application. They do not establish a mandatory React, Next.js, Tailwind, animation or icon stack. SmoothUI's own brand tokens, primitive variants and motion metadata are source observations, not additional preferences.
+There are no confirmed favorite fonts, exact colors, spacing values, icon packages, fixed button positions, or preferred light/dark mode. Theme flexibility itself is confirmed. C08 approves Seaversity Rental as a concrete outcome; its project-specific implementation values are documented in Batch 004 without becoming global preferences. No explicit visual dislikes have been supplied. Cult UI and SmoothUI add inspectable implementation examples for composition, controls and motion; neither source collection has been rendered or tested here as a complete application. They do not establish a mandatory React, Next.js, Tailwind, animation or icon stack. SmoothUI's own brand tokens, primitive variants and motion metadata are source observations, not additional preferences.
 
 ## Theme independence
 
@@ -76,7 +77,7 @@ Family names and color descriptions label the original evidence. They do not con
 | `atmospheric-ai-workspace` | B001-14 | Dark sidebar, large open canvas, a prompt/composer focal point, variable ambient glow or gradients. | AI start screens and creative workspaces. |
 | `quiet-light-workspace` | B001-15–20, with 18 a duplicate; B002-05, B002-12; B003-15 | Broad surfaces, precise dividers, restrained rounding, regular navigation and local actions. | Settings, member management, CRM grids, campaign rows, empty states, boards, task operations, overlays. |
 | `spatial-service-interface` | B001-21 | Pale map context, rounded panels, a blue selection/action system, a large visual area beside booking details. | Map-led and service-booking interfaces; only one example so far. |
-| `modular-dashboard` | B002-03, B002-04, B002-08, B002-09, B002-11, B002-15, B002-16 | Aligned card grids, summary/detail grouping, local controls; includes paired theme and navigation variants. | Platform overviews, CRM, finance, people operations, assistance beside analytics. |
+| `modular-dashboard` | B002-03, B002-04, B002-08, B002-09, B002-11, B002-15, B002-16; B004-01 | Aligned card grids, summary/detail grouping, local controls; includes paired theme and navigation variants and the explicitly approved Seaversity Rental implementation. | Platform overviews, CRM, finance, people operations, assistance beside analytics. |
 | `dense-admin-console` | B002-17–21 | Compact iconography, small radii, regular headers, aligned table rows and contextual toolbars. | Operational dashboards, logs, usage, integrations, admin tables; related source group. |
 | `editorial-commerce` | B002-01 | Layered photographic hero, oversized display type, searchable header, section-specific shopping actions. | Outdoor/retail landing compositions; one example. |
 | `institutional-editorial` | B002-02 | Offset text/photo grid, thin rules, headline hierarchy and editorial rows. | Education/information-heavy public sites; one composition. |
@@ -91,6 +92,10 @@ Family names and color descriptions label the original evidence. They do not con
 | `resource-operations` | B003-11–14 | Nested scope navigation, dense aligned tables, contextual alerts, related detail panels and consistent component anatomy. | Resource/deployment operations; one related screen/component group. |
 
 The first and fourth families overlap but differ in softness, density, and surface treatment. The analytical and AI-home examples have substantially different density and focal hierarchy despite sharing dark source palettes. Preserve useful structural differences while adapting their colors freely to requirements.
+
+## Approved implementation example
+
+[Seaversity Rental, B004-01](batches/004.md) demonstrates the existing priorities in a completed branded operations dashboard. Its sidebar and utility header, aligned summary/chart regions, contextual actions, and repeated reservation rows give future agents a concrete reference for similar briefs. These details are observations of the approved outcome; the user did not separately identify each as a reason for approval. Use its structure where relevant, translate colors through the new project's design system, and retain other reference families for different tasks. The archived screenshot and documented CSS values are self-contained; no hosted demo is required.
 
 ## Practical translation of the visual taste
 
@@ -119,7 +124,7 @@ The user explicitly requires freedom to use any theme or client palette. Purple,
 
 No explicit visual dislikes have been supplied. Coherent grouping, intentional geometry, and consistent spacing are useful ways to apply the confirmed priorities. Color intensity, saturation, or a departure from the source palette must not be treated as a violation of the user's taste.
 
-Motion, hover transitions, full focus handling, keyboard behavior and responsive transitions remain unobserved. B002-10 supplies limited phone-layout evidence; B002-25 shows one visible field-focus state; B002-08/B002-09 shows two navigation widths. None proves behavior across devices or interaction states. Design and validate those for the actual product.
+Motion, hover transitions, full focus handling, keyboard behavior and responsive transitions remain unproven by the archived screenshots. Batch 004 separately records source observations from the implementation; those are not visual evidence of behavior. B002-10 supplies limited phone-layout evidence; B002-25 shows one visible field-focus state; B002-08/B002-09 shows two navigation widths. None proves behavior across devices or interaction states. Design and validate those for the actual product.
 
 Browser frames, device bezels, exterior backgrounds, curation strips, and very large margins around isolated widgets belong to the supplied presentations. Photography and illustrations inside actual page sections are part of their composition. Tiny screens inside a supporting collage are not individual reference endorsements. Visible brand/curator labels are recorded as source cues without asserting current product state or original authorship.
 
@@ -134,6 +139,8 @@ No answer is required before incorporating the next batch.
 - Which examples or details does the user actively dislike?
 
 ## Evidence history
+
+- 2026-11-03, B004: recorded C08, the user's explicit approval of Seaversity Rental created using this skill. Preserved the existing 2026-10-30 overview capture unchanged, linked its B002-04/B003-15 design lineage, and separated reusable observations from brand-specific implementation values. This adds one approved outcome rather than independent votes for its inherited features.
 
 - 2026-10-30, B001: archived the original 21 files; cataloged appearance, context, limitations, and relationships; recorded C02 after the user's clarification.
 - 2026-10-30, B001 clarification: added C04 and C05 for clean icons, spacing, button placement, overall appearance, and mandatory theme flexibility. Earlier color descriptions remain source observations; they do not determine future projects' palettes.

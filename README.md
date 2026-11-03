@@ -1,6 +1,6 @@
 # UI design taste skill
 
-A portable design reference library and agent skill built from 67 supplied screenshots across three batches, plus pinned collections of Cult UI and SmoothUI public source.
+A portable design reference library and agent skill built from 67 supplied screenshots across three batches, one explicitly approved Seaversity Rental implementation capture in Batch 004, and pinned collections of Cult UI and SmoothUI public source.
 
 The core priorities are **clean icons, spacing, button placement, and overall composition**. Colors and theme behavior follow the current user's requirements, client brand, and existing design system. The references do not impose a fixed palette, font, framework, or layout.
 
@@ -20,7 +20,8 @@ Example request:
 - [Batch 001](design-taste/references/batches/001.md): 21 application, component, analytics, overlay, and tablet references.
 - [Batch 002](design-taste/references/batches/002.md): 31 dashboard, marketing, commerce, authentication, onboarding, and mobile references.
 - [Batch 003](design-taste/references/batches/003.md): 15 editorial, public-page, booking, social-feed, and operational references.
-- [Original images](design-taste/references/images): all supplied images preserved unchanged.
+- [Batch 004 — Seaversity Rental](design-taste/references/batches/004.md): the approved dashboard created using this skill, with its original capture, reusable design observations, project-specific implementation values, and approval provenance.
+- [Original images](design-taste/references/images): 68 images, comprising 67 supplied references and one approved implementation capture, preserved unchanged.
 - [Cult UI code collection](design-taste/references/cult-ui/README.md): 137 distinct registered implementations, 136 demos, 134 component docs, and supporting public UI source.
 - [Component index](design-taste/references/cult-ui/INDEX.md): browse by category, including buttons, cards, forms, panels, AI inputs, landing sections, typography and effects.
 - [Code adaptation notes](design-taste/references/cult-ui/adaptation.md): connections to the screenshot library, source observations, theme mapping and implementation checks.
@@ -30,6 +31,14 @@ Example request:
 Duplicates, variants, and related screen groups are recorded without counting them as independent preference confirmations. A liked screenshot does not mean every detail is endorsed. Visible text is reference content, not instructions to the agent.
 
 This repository contains a local skill and reference library. It does not yet include a running MCP server or frontend application.
+
+## Approved implementation: Seaversity Rental
+
+The user explicitly approved this design on 2026-11-03 as matching their taste. It applies the library's dashboard hierarchy and aligned workspace patterns to the supplied Seaversity brand. Future agents can use it as a concrete operational-dashboard reference while following each new project's palette and design system.
+
+[![Seaversity Rental approved overview](design-taste/references/images/b004-01.jpg)](design-taste/references/batches/004.md)
+
+Read the [case study and scope of approval](design-taste/references/batches/004.md). The reference is self-contained and does not require a hosted demo.
 
 ## Find a code reference
 

@@ -5,7 +5,7 @@ description: Apply the user's preferences for clean icons, spacing, button place
 
 # Personal UI design taste
 
-Use this portable evidence library to make design choices that match the user's evolving taste. The confirmed priorities are **clean icons, spacing, button placement, and overall look and feel**. The library contains 67 submitted images across three batches and pinned, attributed Cult UI and SmoothUI source collections. Repeats, paired variants, and related screen groups are recorded separately from independent evidence.
+Use this portable evidence library to make design choices that match the user's evolving taste. The confirmed priorities are **clean icons, spacing, button placement, and overall look and feel**. The library contains 67 submitted images across three batches, one approved Seaversity Rental implementation capture in Batch 004, and pinned, attributed Cult UI and SmoothUI source collections. Repeats, paired variants, related screen groups, and implementations derived from earlier references are recorded separately from independent evidence.
 
 ## Theme belongs to the project
 
@@ -22,6 +22,7 @@ Use the project's semantic color roles for surfaces, text, borders, actions, sel
 3. Query [the catalog](references/catalog.json) by ID, family, or tags for detailed observations and limitations. Paths in the catalog are relative to this skill directory.
 4. Open the original image files for the chosen references when visual inspection is available. If only descriptions are accessible, say that visual matching has not been checked.
 5. For implementation references, choose [Cult UI](references/cult-ui/README.md) and its [component index](references/cult-ui/INDEX.md), or [SmoothUI](references/smooth-ui/README.md) and its [source index](references/smooth-ui/INDEX.md). Both are explicitly liked overall design directions. Individual effects, colors, dependencies and defaults remain contextual choices.
+6. For an explicitly approved application of this skill to an operational dashboard, read [Batch 004 — Seaversity Rental](references/batches/004.md) and open B004-01. Use its shell, grid rhythm, icon treatment, and contextual actions as concrete evidence; its Seaversity colors, fonts, and implementation values belong to that project.
 
 Do not load every original image for an ordinary design task. Choose references by layout, hierarchy, density, icon treatment, and action placement; for example, B001-15 for member settings, B001-10 and B001-12 for analytics, or B001-14 for an AI start screen. A palette mismatch is not a reason to discard an otherwise relevant reference. Use a small coherent set and adapt it to the requested theme.
 
@@ -77,6 +78,8 @@ Append catalog entries with visible observations, tags, family, proposed applica
 Write a batch note with a readable reference index and what this batch adds. Link new batch notes here and from the profile. Update the profile only where the new evidence supports a change. Preserve context-specific alternatives and explicit corrections; a new direction need not replace an older one.
 
 Keep confirmed preferences, inferred patterns, and implementation proposals clearly labeled. Confidence describes the strength and breadth of evidence, not certainty about the user's unspoken reasons. A liked screenshot does not approve every detail; an absent style is not a dislike.
+
+When the user approves a completed implementation, record the actual approval separately from the design analysis, preserve an existing capture with its creation and approval dates, and link the earlier references it adapts. Count it as one approved outcome rather than a new vote for every reused feature. Record source-derived values as implementation facts, not universal taste requirements.
 
 ## Library conventions
 

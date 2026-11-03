@@ -4,6 +4,7 @@
 .gitattributes text eol=lf
 .gitignore text eol=lf
 *.png binary
+*.jpg binary
 
 # Keep the licensed upstream snapshot byte-for-byte identical to its Git blobs.
 design-taste/references/cult-ui/source/** -text

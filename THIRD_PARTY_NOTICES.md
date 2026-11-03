@@ -22,4 +22,10 @@ Our guides, catalog, index and scripts are additions for this skill, not upstrea
 
 ## User-supplied visual references
 
-The 67 images under `design-taste/references/images/` were supplied as design references. Available provenance and uncertain attribution are recorded in the screenshot catalog. The Cult UI and SmoothUI licenses do not cover these images; their inclusion does not establish permission to reuse their artwork, branding or photography in a shipped product.
+The 67 images in batches B001–B003 under `design-taste/references/images/` were supplied as design references. Available provenance and uncertain attribution are recorded in the screenshot catalog. The Cult UI and SmoothUI licenses do not cover these images; their inclusion does not establish permission to reuse their artwork, branding or photography in a shipped product.
+
+## Approved Seaversity Rental implementation capture
+
+`design-taste/references/images/b004-01.jpg` is an unchanged screenshot of the sample React application created by Codex for the user on 2026-10-30 and explicitly approved for this design library on 2026-11-03. Its design references B002-04 and B003-15. The Seaversity logo was supplied by the user; the visible administrator and rental records are fictional demo data.
+
+Vehicle imagery in the capture comes from Toyota Makati's [Fortuner](https://toyotamakati.com.ph/fortuner/), [Vios](https://toyotamakati.com.ph/vios/), [Innova](https://toyotamakati.com.ph/innova/), and [Super Grandia image source page](https://toyotamakati.com.ph/camry/). Those photographs and brand marks retain their respective rights. Approval of the UI and inclusion of its screenshot do not grant rights to extract or reuse third-party artwork in another product. The app's source fonts and icon packages are not bundled in this batch, and the Cult UI and SmoothUI MIT licenses do not cover this capture.

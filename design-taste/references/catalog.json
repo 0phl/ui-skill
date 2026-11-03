@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-30",
+  "updated_on": "2026-11-03",
   "path_base": "design-taste/",
   "purpose": "Portable visual evidence library for the user's personal frontend/UI/UX design taste.",
   "evidence_policy": {
-    "observations": "Visible properties of supplied images. They do not establish which individual features the user likes.",
-    "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings.",
+    "observations": "Visible properties of supplied images and approved implementation captures. They do not establish which individual features the user likes. Source-derived implementation values are labeled separately.",
+    "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings. B004 explicitly approves the completed Seaversity Rental design as an application of this skill, without new feature-level rankings or global theme requirements.",
     "inferences": "Cross-reference conclusions live in references/taste-profile.md and remain revisable.",
     "implementation_proposals": "Practical adaptations are recommendations, not extracted specifications. Every proposed application inherits the theme_independence policy and current project requirements.",
-    "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior.",
+    "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior. B004-01 is a Codex-created capture of the sample application made for the user; its creation date, approval date, earlier reference relationships and asset provenance are recorded separately.",
     "presentation_frames": "Separate browser chrome, device bezels, curation/attribution strips, exterior backgrounds and showcase margins from application UI. Supporting collages and preview mockups are not independent approvals of every embedded screen. Distinguish decorative imagery inside the actual page from external presentation framing.",
-    "counting": "67 supplied files across three batches. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes.",
+    "counting": "68 archived images across four batches: 67 supplied files in B001-B003 and one approved implementation capture in B004. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes. B004-01 applies B002-04 and B003-15; it is one explicit approval of a completed design, not independent confirmation of every inherited feature.",
     "theme_independence": "Reference colors and light/dark family labels describe the source images only. Apply structure and visual relationships using the requested brand palette, design system, and theme behavior. Do not force neutral surfaces, pastels, black buttons, or a source hue. Preserve existing system-following behavior when applicable; this library does not require adding theme modes.",
     "reference_selection": "Select by icon treatment, spacing, action placement, hierarchy, and composition; a palette mismatch does not exclude a reference."
   },
@@ -133,6 +133,22 @@
         "B001-C01"
       ],
       "scope_note": "Continuation of the liked-reference intake; no new item-level ranking. B003-11 through B003-14 form a related operations screen/component group; editorial and expressive options supplement the existing application evidence."
+    },
+    {
+      "id": "B004",
+      "received_on": "2026-11-03",
+      "user_statement": "Now what i want you to do is add it on my https://github.com/0phl/ui-skill, so this design is also approve on my taste you created here using also my own UI skill.",
+      "analysis_path": "references/batches/004.md",
+      "reference_ids": [
+        "B004-01"
+      ],
+      "inherited_clarification_ids": [
+        "B001-C01"
+      ],
+      "profile_preference_ids": [
+        "C08"
+      ],
+      "scope_note": "Explicit approval of the Seaversity Rental implementation created using this skill. One existing overview capture is archived; no new feature-level ranking or global palette, font, framework, or pixel specification was supplied."
     }
   ],
   "references": [
@@ -4653,6 +4669,98 @@
         "height_px": 768,
         "bytes": 207235,
         "sha256": "481bb00bb271db79e41dbbed07ff7363e75a2d93a93629a73952ac923b1a1fda",
+        "preservation": "unmodified-copy"
+      }
+    },
+    {
+      "id": "B004-01",
+      "batch_id": "B004",
+      "attachment_number": 1,
+      "title": "Seaversity Rental approved operational dashboard implementation",
+      "image_path": "references/images/b004-01.jpg",
+      "original_filename": "overview.jpg",
+      "source": {
+        "kind": "approved-implementation-capture",
+        "original_url": null,
+        "creator": "Codex, implementing the user-requested Seaversity Rental sample application",
+        "created_on": "2026-10-30",
+        "approved_on": "2026-11-03",
+        "original_project_path": "seaversity-rental/qa/overview.jpg",
+        "visible_labels": [
+          "Seaversity Rental"
+        ],
+        "provenance_note": "Unchanged full-page local application screenshot. The supplied Seaversity logo and Toyota Makati vehicle imagery have separate rights; see references/batches/004.md and the repository third-party notices. No live deployment dependency."
+      },
+      "user_feedback": {
+        "overall": "explicitly-approved-implementation",
+        "priority": "clean-icons-spacing-button-placement-overall-look-and-feel",
+        "specific_likes": [],
+        "specific_dislikes": [],
+        "batch_clarification_ids": [
+          "B001-C01"
+        ],
+        "profile_preference_ids": [
+          "C08"
+        ],
+        "scope_note": "The user explicitly approves the resulting design as matching their taste. Established priorities continue; individual values and features were not separately ranked."
+      },
+      "visual_family": "modular-dashboard",
+      "tags": [
+        "approved-implementation",
+        "seaversity",
+        "rental",
+        "operations",
+        "dashboard",
+        "sidebar",
+        "kpi-grid",
+        "charts",
+        "table",
+        "contextual-actions",
+        "brand-adaptation"
+      ],
+      "observations": {
+        "composition": "A labeled sidebar and slim utility header frame a title/action row, welcome banner beside daily handovers, four aligned KPI cards, a wide revenue chart beside fleet availability, and a reservation table.",
+        "appearance": [
+          "Seaversity blue marks primary actions, selection and data against a pale canvas and white panels.",
+          "Fine borders, restrained elevation and distinct panel/control radii separate regions.",
+          "Heading, numeric value and secondary metadata tiers create a clear operational scan path."
+        ],
+        "icons": "Small outline navigation and action symbols use consistent alignment; KPI symbols have compact tinted containers. Brand artwork and vehicle photography are separate from utility icons.",
+        "spacing": "Repeated card edges and gutters align summary and chart regions. Titles and labels form tighter groups; table rows repeat customer, vehicle and status anatomy.",
+        "action_placement": "New reservation sits with page context; Explore your fleet is inside the banner; the period selector belongs to the revenue panel; View all reservations is in the table heading."
+      },
+      "agent_application": {
+        "status": "proposed-adaptation",
+        "principle": "For a relevant operations brief, reuse the overview-to-detail hierarchy, coherent icon anatomy, regular grid rhythm and contextual actions. Adapt density, regions and theme to the actual product.",
+        "theme_policy_ref": "evidence_policy.theme_independence",
+        "implementation_notes_path": "references/batches/004.md"
+      },
+      "limitations": [
+        "Overall design approval does not make Seaversity blue, a light theme, Manrope, DM Sans, Lucide, React, or exact CSS values universal preferences.",
+        "Only the overview is archived. Other pages and interactive states are not separately documented or approved by this image.",
+        "The still image does not establish responsive behavior, keyboard usability, animation or accessibility; source observations are labeled separately.",
+        "Some secondary labels are small or faint. Improve readability instead of treating every detail as endorsed.",
+        "People, reservations, dates, rates and statistics are fictional demo records, not live business facts.",
+        "Logo and vehicle image rights are distinct from UI approval; no asset reuse license is implied.",
+        "This reference does not authorize hosting or redeployment; the user requested local-only app work."
+      ],
+      "relationships": [
+        {
+          "type": "implementation-derived-from",
+          "target": "B002-04",
+          "note": "The application README cites this reference for dashboard hierarchy."
+        },
+        {
+          "type": "implementation-derived-from",
+          "target": "B003-15",
+          "note": "The application README cites this reference for navigation and aligned data rows."
+        }
+      ],
+      "file_metadata": {
+        "width_px": 1265,
+        "height_px": 1403,
+        "bytes": 136329,
+        "sha256": "a1062690bddd96b22f9362b3b6b06e2ae79df4d9d8caccfb7664df8499e690d2",
         "preservation": "unmodified-copy"
       }
     }
