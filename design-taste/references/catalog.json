@@ -5,14 +5,14 @@
   "purpose": "Portable visual evidence library for the user's personal frontend/UI/UX design taste.",
   "evidence_policy": {
     "observations": "Visible properties of supplied images and approved implementation captures. They do not establish which individual features the user likes. Source-derived implementation values are labeled separately.",
-    "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings. B004 explicitly approves the completed Seaversity Rental design as an application of this skill, without new feature-level rankings or global theme requirements. R001 records explicit rejection of the entire Ronan University landing page, including typography/font treatment and boxy sharp edges; avoid reproducing the same design or close variants.",
+    "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings. B004 explicitly approves the completed Seaversity Rental design as an application of this skill, without new feature-level rankings or global theme requirements. R001 records explicit rejection of the entire first Ronan University landing page, including typography/font treatment and boxy sharp edges; avoid reproducing the same design or close variants. B005 explicitly approves the rebuilt second Ronan design as passed and requests its inclusion in this library. This overall approval supplies a concrete positive replacement without undoing R001 or ranking each individual change.",
     "inferences": "Cross-reference conclusions live in references/taste-profile.md and remain revisable.",
     "implementation_proposals": "Practical adaptations are recommendations, not extracted specifications. Every proposed application inherits the theme_independence policy and current project requirements.",
-    "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior. B004-01 is a Codex-created capture of the sample application made for the user; its creation date, approval date, earlier reference relationships and asset provenance are recorded separately.",
+    "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior. B004-01 is a Codex-created capture of the sample application made for the user; its creation date, approval date, earlier reference relationships and asset provenance are recorded separately. B005-01 is the unchanged Codex browser capture of the rebuilt Ronan sample, created before its explicit approval on the same date; all page photographs were generated with Codex Image Gen.",
     "presentation_frames": "Separate browser chrome, device bezels, curation/attribution strips, exterior backgrounds and showcase margins from application UI. Supporting collages and preview mockups are not independent approvals of every embedded screen. Distinguish decorative imagery inside the actual page from external presentation framing.",
-    "counting": "68 archived images across four batches: 67 supplied files in B001-B003 and one approved implementation capture in B004. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes. B004-01 applies B002-04 and B003-15; it is one explicit approval of a completed design, not independent confirmation of every inherited feature. R001 is one text/source-based rejected outcome in implementation_feedback, with no archived screenshot; it does not change the 68-image count or enter the image-only references array.",
+    "counting": "69 archived images across five batches: 67 supplied files in B001-B003 and two approved implementation captures, one each in B004 and B005. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes. B004-01 applies B002-04 and B003-15; it is one explicit approval of a completed design, not independent confirmation of every inherited feature. R001 is one text/source-based rejected outcome in implementation_feedback, with no archived screenshot; it does not change the 69-image count or enter the image-only references array. B005-01 applies B002-13/B002-22/B002-26/B004-01 and follows R001; it is one approved redesign outcome, not independent votes for inherited features.",
     "theme_independence": "Reference colors and light/dark family labels describe the source images only. Apply structure and visual relationships using the requested brand palette, design system, and theme behavior. Do not force neutral surfaces, pastels, black buttons, or a source hue. Preserve existing system-following behavior when applicable; this library does not require adding theme modes.",
-    "reference_selection": "Select by icon treatment, spacing, action placement, hierarchy, and composition; a palette mismatch does not exclude a reference. Read relevant implementation_feedback before choosing a direction. Specific outcome rejection takes precedence over broad editorial inferences; topic similarity alone does not establish visual alignment."
+    "reference_selection": "Select by icon treatment, spacing, action placement, hierarchy, and composition; a palette mismatch does not exclude a reference. Read relevant implementation_feedback before choosing a direction. Specific outcome rejection takes precedence over broad editorial inferences; topic similarity alone does not establish visual alignment. For a comparable landing page, inspect approved B005-01 alongside rejected R001; use explicit version identities rather than treating all Ronan designs as rejected."
   },
   "batches": [
     {
@@ -149,6 +149,22 @@
         "C08"
       ],
       "scope_note": "Explicit approval of the Seaversity Rental implementation created using this skill. One existing overview capture is archived; no new feature-level ranking or global palette, font, framework, or pixel specification was supplied."
+    },
+    {
+      "id": "B005",
+      "received_on": "2026-11-03",
+      "user_statement": "now add this design also as passed on my reference. update and add this to my UI skill.",
+      "analysis_path": "references/batches/005.md",
+      "reference_ids": [
+        "B005-01"
+      ],
+      "inherited_clarification_ids": [
+        "B001-C01"
+      ],
+      "profile_preference_ids": [
+        "C10"
+      ],
+      "scope_note": "Explicit approval of Ronan University v2 as passed. One existing full-page narrow-layout capture is preserved. R001 remains the rejected first version; no new individual feature rankings or universal style tokens were supplied."
     }
   ],
   "references": [
@@ -4763,12 +4779,127 @@
         "sha256": "a1062690bddd96b22f9362b3b6b06e2ae79df4d9d8caccfb7664df8499e690d2",
         "preservation": "unmodified-copy"
       }
+    },
+    {
+      "id": "B005-01",
+      "batch_id": "B005",
+      "attachment_number": 1,
+      "title": "Ronan University approved second landing-page design",
+      "image_path": "references/images/b005-01.jpg",
+      "original_filename": null,
+      "source": {
+        "kind": "approved-implementation-capture",
+        "original_url": null,
+        "creator": "Codex, implementing the user-requested Ronan University sample",
+        "created_on": "2026-11-03",
+        "approved_on": "2026-11-03",
+        "visible_labels": [
+          "ronan University",
+          "Big ideas start here. So does your future."
+        ],
+        "provenance_note": "Original full-page browser screenshot captured before approval and archived byte-for-byte from the retained capture. The capture originally existed in memory rather than as a named file. Narrow layout, 453 x 3805 pixels. Three Codex-generated photographs; no live deployment dependency.",
+        "file_hashes": {
+          "index.html": "7e399e563d8c04ba965ef6b6aa07b56ce16f8b19239335ec9c86412b6b7112f6",
+          "styles.css": "dccd010f53790a4a897a360dd27041ae036792a73a680dfe9af0835cbbe19a39",
+          "app.js": "1c69251c1eb431e2835cabca0c4689cc091003ba9636a2779bcdf1a648058e2a"
+        }
+      },
+      "user_feedback": {
+        "overall": "explicitly-approved-implementation",
+        "status": "passed",
+        "statement": "now add this design also as passed on my reference. update and add this to my UI skill.",
+        "priority": "clean-icons-spacing-button-placement-overall-look-and-feel",
+        "specific_likes": [],
+        "specific_dislikes": [],
+        "batch_clarification_ids": [
+          "B001-C01"
+        ],
+        "profile_preference_ids": [
+          "C10"
+        ],
+        "scope_note": "The user approves the entire second design. Its features are observed rather than separately ranked. Approval does not rescind the rejection of the first version."
+      },
+      "visual_family": "contemporary-rounded-marketing",
+      "tags": [
+        "approved-implementation",
+        "passed",
+        "ronan-university",
+        "landing-page",
+        "education",
+        "sans-serif-hierarchy",
+        "rounded-controls",
+        "contained-photography",
+        "program-discovery",
+        "contextual-actions",
+        "narrow-layout",
+        "brand-adaptation"
+      ],
+      "observations": {
+        "composition": "A light header and centered hero lead into a rounded student image, two smaller message/campus cards, program discovery, campus life, admissions FAQs, and a light footer. The narrow capture stacks the major sections.",
+        "appearance": [
+          "Strong sans-serif headings and a maroon emphasized phrase form the hero hierarchy.",
+          "Rounded buttons, pills, cards, icon tiles, and photographs create a coordinated geometry.",
+          "White surfaces, dark text, fine borders, and concentrated maroon actions express the brief."
+        ],
+        "icons": "Consistent small outline icons accompany contextual actions and labels; tinted icon tiles identify programs. The wordmark and photography have distinct roles.",
+        "spacing": "Broad intervals separate page sections; closer spacing groups headings, supporting text, metadata, and related controls. Program cards repeat their anatomy.",
+        "action_placement": "Apply sits in the header; paired hero actions follow the message; program controls sit above results; card arrows belong to individual programs; campus and admissions actions stay with their copy."
+      },
+      "agent_application": {
+        "status": "proposed-adaptation",
+        "principle": "Use this approved redesign as a concrete starting point for comparable public pages. Transfer coherent type hierarchy, softened component geometry, grouped spacing, contained imagery and local actions using the current brief and theme. Compare with R001 to avoid recreating the rejected first design.",
+        "theme_policy_ref": "evidence_policy.theme_independence",
+        "implementation_notes_path": "references/batches/005.md"
+      },
+      "limitations": [
+        "Whole-design approval does not independently rank the font, radii, imagery, individual controls, or exact CSS values.",
+        "Only the 453-pixel-wide initial full-page layout is archived. Desktop arrangement and interactions are source observations, not separately captured or approved states.",
+        "Static appearance does not prove responsive transitions, keyboard behavior, accessibility or performance. No automated tests were run.",
+        "Small or faint supporting labels should be adapted for readability rather than treated as required.",
+        "University content and programs are fictional; forms are browser-only demonstrations.",
+        "Manrope, black/white/maroon, and generated campus imagery belong to this brief, not universal taste requirements.",
+        "R001 remains rejected. Reusing two photographs does not make its original composition acceptable."
+      ],
+      "relationships": [
+        {
+          "type": "implementation-derived-from",
+          "target": "B002-13",
+          "note": "Clear centered sans-serif hierarchy."
+        },
+        {
+          "type": "implementation-derived-from",
+          "target": "B002-22",
+          "note": "Centered marketing message and rounded controls."
+        },
+        {
+          "type": "implementation-derived-from",
+          "target": "B002-26",
+          "note": "Grouped photography with varied panel roles."
+        },
+        {
+          "type": "implementation-derived-from",
+          "target": "B004-01",
+          "note": "Spacing rhythm and component treatment from the approved Seaversity implementation."
+        },
+        {
+          "type": "approved-redesign-of",
+          "target": "R001",
+          "note": "A new composition under the same Ronan brief. The original remains rejected."
+        }
+      ],
+      "file_metadata": {
+        "width_px": 453,
+        "height_px": 3805,
+        "bytes": 218106,
+        "sha256": "edccb458867c9f1cbee62b8c28b504de7d740fcdd77ba593fe1ecaee4fca37a9",
+        "preservation": "unmodified-original-capture"
+      }
     }
   ],
   "implementation_feedback": [
     {
       "id": "R001",
-      "title": "Ronan University rejected landing page",
+      "title": "Ronan University rejected first landing-page design",
       "kind": "rejected-implementation-feedback",
       "created_on": "2026-10-30",
       "received_on": "2026-11-03",
@@ -4832,6 +4963,11 @@
           "type": "rejected-implementation-derived-from",
           "target": "B003-06",
           "note": "The local README cites architecture-led editorial guidance; the agent's resulting combination is rejected."
+        },
+        {
+          "type": "replaced-by-approved-redesign",
+          "target": "B005-01",
+          "note": "The user subsequently approved the second Ronan design. This does not change the rejected status of R001."
         }
       ],
       "limitations": [

@@ -5,15 +5,19 @@ description: Apply the user's preferences for clean icons, spacing, button place
 
 # Personal UI design taste
 
-Use this portable evidence library to make design choices that match the user's evolving taste. The confirmed priorities are **clean icons, spacing, button placement, and overall look and feel**. The library contains 67 submitted images across three batches, one approved Seaversity Rental implementation capture in Batch 004, and pinned, attributed Cult UI and SmoothUI source collections. Repeats, paired variants, related screen groups, and implementations derived from earlier references are recorded separately from independent evidence.
+Use this portable evidence library to make design choices that match the user's evolving taste. The confirmed priorities are **clean icons, spacing, button placement, and overall look and feel**. The library contains 67 submitted images across three batches, approved implementation captures of Seaversity Rental in Batch 004 and the Ronan University redesign in Batch 005, and pinned, attributed Cult UI and SmoothUI source collections. Repeats, paired variants, related screen groups, and implementations derived from earlier references are recorded separately from independent evidence.
 
 ## Rejected direction — read before choosing a public-page style
 
-**R001: the Ronan University landing page is explicitly rejected.** On 2026-11-03 the user rejected the entire result, specifically calling out typography, the font used, and boxy sharp edges. It did not match the supplied UI examples. Read [the rejection record](references/rejections/ronan-university.md) when designing landing pages or considering a similar direction.
+**R001: the first Ronan University landing page is explicitly rejected.** On 2026-11-03 the user rejected the entire result, specifically calling out typography, the font used, and boxy sharp edges. It did not match the supplied UI examples. Read [the rejection record](references/rejections/ronan-university.md) when designing landing pages or considering a similar direction.
 
 Do not recreate its formal university/brochure composition or a close variant: thin oversized serif/italic headlines over a darkened campus hero, a crest-like masthead, hard rectangular buttons and cards, a statistics strip, and a large concluding promotional band. Changing its name, copy, palette, or images is not a meaningful correction. Its type system and sharp boxy treatment are negative evidence, not defaults for this user's taste.
 
 Select a coherent liked reference by the actual typography, geometry, density, icon treatment, spacing, and action placement. Favor the softened controls and contemporary type hierarchy visible in the selected positive example over Ronan's treatment; the exact font and radius remain project choices. An education brief alone does not justify a traditional serif/crest style. Earlier broad editorial inferences do not override this specific rejection. Preserve requested brand colors; black, white, and maroon were requirements of that project.
+
+## Approved Ronan replacement
+
+**B005-01 / C10: the second Ronan University design explicitly passes the user's standards.** Read [Batch 005](references/batches/005.md) and open its full-page capture for a concrete approved landing-page direction: strong contemporary sans-serif hierarchy, rounded controls and image panels, grouped spacing, contextual actions, and contained photography. It is a complete recomposition of the rejected result, not a minor restyle. Keep R001 as negative evidence for the first version. Exact fonts, radii, colors, and section order remain project choices; this is one approved outcome, not a separate preference vote for every feature.
 
 ## Theme belongs to the project
 
@@ -31,6 +35,8 @@ Use the project's semantic color roles for surfaces, text, borders, actions, sel
 4. Open the original image files for the chosen references when visual inspection is available. If only descriptions are accessible, say that visual matching has not been checked.
 5. For implementation references, choose [Cult UI](references/cult-ui/README.md) and its [component index](references/cult-ui/INDEX.md), or [SmoothUI](references/smooth-ui/README.md) and its [source index](references/smooth-ui/INDEX.md). Both are explicitly liked overall design directions. Individual effects, colors, dependencies and defaults remain contextual choices.
 6. For an explicitly approved application of this skill to an operational dashboard, read [Batch 004 — Seaversity Rental](references/batches/004.md) and open B004-01. Use its shell, grid rhythm, icon treatment, and contextual actions as concrete evidence; its Seaversity colors, fonts, and implementation values belong to that project.
+
+7. For an explicitly approved landing-page implementation, read [Batch 005 — Ronan University redesign](references/batches/005.md) and open B005-01. Pair this positive outcome with R001 when choosing a comparable public-page direction; they are different versions of the same brief.
 
 Do not load every original image for an ordinary design task. Choose references by layout, hierarchy, density, icon treatment, and action placement; for example, B001-15 for member settings, B001-10 and B001-12 for analytics, or B001-14 for an AI start screen. A palette mismatch is not a reason to discard an otherwise relevant reference. Use a small coherent set and adapt it to the requested theme.
 

@@ -1,6 +1,8 @@
-# R001 — rejected Ronan University landing page
+# R001 — rejected first Ronan University landing page
 
 Created 2026-10-30; rejected 2026-11-03. **Outcome: does not meet the user's design standards. Do not reproduce this design or close variants.**
+
+**Version distinction:** this rejection applies to the first design. The fully rebuilt second version was subsequently approved on 2026-11-03 as [B005-01 / C10](../batches/005.md). Use that approved replacement for comparable work; its approval does not rehabilitate this original composition.
 
 This is implementation feedback backed by the conversation and local source inspection. No screenshot is archived with this record. It adds one negative outcome, not another image or a positive reference. See C09 in [the taste profile](../taste-profile.md) and `implementation_feedback` in [the catalog](../catalog.json).
 

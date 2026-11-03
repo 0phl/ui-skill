@@ -1,8 +1,8 @@
 # UI design taste skill
 
-A portable design reference library and agent skill built from 67 supplied screenshots across three batches, one explicitly approved Seaversity Rental implementation capture in Batch 004, and pinned collections of Cult UI and SmoothUI public source.
+A portable design reference library and agent skill built from 67 supplied screenshots across three batches, two explicitly approved implementation captures: Seaversity Rental in Batch 004 and the Ronan University redesign in Batch 005, and pinned collections of Cult UI and SmoothUI public source.
 
-The core priorities are **clean icons, spacing, button placement, and overall composition**. Colors and theme behavior follow the current user's requirements, client brand, and existing design system. The references do not impose a fixed palette, font, framework, or layout. Explicit negative feedback is also recorded: the Ronan University landing page, including its typography/font treatment and boxy sharp edges, is rejected and must not be recreated.
+The core priorities are **clean icons, spacing, button placement, and overall composition**. Colors and theme behavior follow the current user's requirements, client brand, and existing design system. The references do not impose a fixed palette, font, framework, or layout. Explicit negative feedback is also recorded: the first Ronan University landing page, including its typography/font treatment and boxy sharp edges, is rejected and must not be recreated. The second Ronan design is explicitly approved and preserved as a positive reference; these outcomes remain distinct.
 
 ## Start here
 
@@ -21,8 +21,9 @@ Example request:
 - [Batch 002](design-taste/references/batches/002.md): 31 dashboard, marketing, commerce, authentication, onboarding, and mobile references.
 - [Batch 003](design-taste/references/batches/003.md): 15 editorial, public-page, booking, social-feed, and operational references.
 - [Batch 004 — Seaversity Rental](design-taste/references/batches/004.md): the approved dashboard created using this skill, with its original capture, reusable design observations, project-specific implementation values, and approval provenance.
-- [R001 — rejected Ronan University design](design-taste/references/rejections/ronan-university.md): explicit feedback on the failed landing page, its recognizable composition, and guidance against repeating its typography and boxy treatment. This text/source record does not add to the image count.
-- [Original images](design-taste/references/images): 68 images, comprising 67 supplied references and one approved implementation capture, preserved unchanged.
+- [Batch 005 — approved Ronan University redesign](design-taste/references/batches/005.md): the passed second design, with its full-page capture, approval statement, reusable observations, and relationship to the rejected first version.
+- [R001 — rejected first Ronan University design](design-taste/references/rejections/ronan-university.md): explicit feedback on the failed landing page, its recognizable composition, and guidance against repeating its typography and boxy treatment. This text/source record does not add to the image count.
+- [Original images](design-taste/references/images): 69 images, comprising 67 supplied references and two approved implementation captures, preserved unchanged.
 - [Cult UI code collection](design-taste/references/cult-ui/README.md): 137 distinct registered implementations, 136 demos, 134 component docs, and supporting public UI source.
 - [Component index](design-taste/references/cult-ui/INDEX.md): browse by category, including buttons, cards, forms, panels, AI inputs, landing sections, typography and effects.
 - [Code adaptation notes](design-taste/references/cult-ui/adaptation.md): connections to the screenshot library, source observations, theme mapping and implementation checks.
