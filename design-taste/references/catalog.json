@@ -8,7 +8,7 @@
     "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings. B004 explicitly approves the completed Seaversity Rental design as an application of this skill, without new feature-level rankings or global theme requirements. R001 records explicit rejection of the entire first Ronan University landing page, including typography/font treatment and boxy sharp edges; avoid reproducing the same design or close variants. B005 explicitly approves the rebuilt second Ronan design as passed and requests its inclusion in this library. This overall approval supplies a concrete positive replacement without undoing R001 or ranking each individual change.",
     "inferences": "Cross-reference conclusions live in references/taste-profile.md and remain revisable.",
     "implementation_proposals": "Practical adaptations are recommendations, not extracted specifications. Every proposed application inherits the theme_independence policy and current project requirements.",
-    "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior. B004-01 is a Codex-created capture of the sample application made for the user; its creation date, approval date, earlier reference relationships and asset provenance are recorded separately. B005-01 is the unchanged Codex browser capture of the rebuilt Ronan sample, created before its explicit approval on the same date; all page photographs were generated with Codex Image Gen.",
+    "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior. B004-01 is a Codex-created capture of the sample application made for the user; its creation date, approval date, earlier reference relationships and asset provenance are recorded separately. B005-01 is an unchanged full-page desktop browser capture of the approved rebuilt Ronan sample. On 2026-11-03 the user requested this desktop replacement for the initially archived narrow-layout image; the reference ID and approved outcome remain the same. All page photographs were generated with Codex Image Gen.",
     "presentation_frames": "Separate browser chrome, device bezels, curation/attribution strips, exterior backgrounds and showcase margins from application UI. Supporting collages and preview mockups are not independent approvals of every embedded screen. Distinguish decorative imagery inside the actual page from external presentation framing.",
     "counting": "69 archived images across five batches: 67 supplied files in B001-B003 and two approved implementation captures, one each in B004 and B005. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes. B004-01 applies B002-04 and B003-15; it is one explicit approval of a completed design, not independent confirmation of every inherited feature. R001 is one text/source-based rejected outcome in implementation_feedback, with no archived screenshot; it does not change the 69-image count or enter the image-only references array. B005-01 applies B002-13/B002-22/B002-26/B004-01 and follows R001; it is one approved redesign outcome, not independent votes for inherited features.",
     "theme_independence": "Reference colors and light/dark family labels describe the source images only. Apply structure and visual relationships using the requested brand palette, design system, and theme behavior. Do not force neutral surfaces, pastels, black buttons, or a source hue. Preserve existing system-following behavior when applicable; this library does not require adding theme modes.",
@@ -164,7 +164,14 @@
       "profile_preference_ids": [
         "C10"
       ],
-      "scope_note": "Explicit approval of Ronan University v2 as passed. One existing full-page narrow-layout capture is preserved. R001 remains the rejected first version; no new individual feature rankings or universal style tokens were supplied."
+      "scope_note": "Explicit approval of Ronan University v2 as passed. One full-page desktop capture is preserved, replacing the initially archived narrow-layout image at the user's request. R001 remains the rejected first version; no new individual feature rankings or universal style tokens were supplied.",
+      "capture_corrections": [
+        {
+          "received_on": "2026-11-03",
+          "user_statement": "change the b005-01 image why the screen is on mobile size, it should be desktop or big screen.",
+          "action": "Replace the B005-01 capture with a full-page desktop screenshot of the same approved implementation. Keep the reference ID and image count unchanged."
+        }
+      ]
     }
   ],
   "references": [
@@ -4786,7 +4793,7 @@
       "attachment_number": 1,
       "title": "Ronan University approved second landing-page design",
       "image_path": "references/images/b005-01.jpg",
-      "original_filename": null,
+      "original_filename": "ronan-v2-desktop.jpg",
       "source": {
         "kind": "approved-implementation-capture",
         "original_url": null,
@@ -4797,11 +4804,24 @@
           "ronan University",
           "Big ideas start here. So does your future."
         ],
-        "provenance_note": "Original full-page browser screenshot captured before approval and archived byte-for-byte from the retained capture. The capture originally existed in memory rather than as a named file. Narrow layout, 453 x 3805 pixels. Three Codex-generated photographs; no live deployment dependency.",
+        "provenance_note": "Full-page desktop browser screenshot captured after the user requested a desktop/big-screen replacement for the initial mobile-sized reference. Unmodified capture, 1425 x 2883 pixels, from a 1440 x 1000 viewport with a 15-pixel scrollbar. Same approved page; three Codex-generated photographs; no live deployment dependency.",
         "file_hashes": {
           "index.html": "7e399e563d8c04ba965ef6b6aa07b56ce16f8b19239335ec9c86412b6b7112f6",
           "styles.css": "dccd010f53790a4a897a360dd27041ae036792a73a680dfe9af0835cbbe19a39",
           "app.js": "1c69251c1eb431e2835cabca0c4689cc091003ba9636a2779bcdf1a648058e2a"
+        },
+        "original_project_path": "design-reference/ronan-v2-desktop.jpg",
+        "capture_replaced_on": "2026-11-03",
+        "viewport": {
+          "width_px": 1440,
+          "height_px": 1000
+        },
+        "superseded_capture": {
+          "width_px": 453,
+          "height_px": 3805,
+          "sha256": "edccb458867c9f1cbee62b8c28b504de7d740fcdd77ba593fe1ecaee4fca37a9",
+          "reason": "User explicitly requested desktop/big-screen reference instead of mobile size.",
+          "previous_commit": "417462fbea4b2f7773ad91326b515a9cffca15c1"
         }
       },
       "user_feedback": {
@@ -4831,11 +4851,11 @@
         "contained-photography",
         "program-discovery",
         "contextual-actions",
-        "narrow-layout",
+        "desktop-layout",
         "brand-adaptation"
       ],
       "observations": {
-        "composition": "A light header and centered hero lead into a rounded student image, two smaller message/campus cards, program discovery, campus life, admissions FAQs, and a light footer. The narrow capture stacks the major sections.",
+        "composition": "A light header with centered navigation and right-side actions leads into a centered hero. A three-column row places a maroon message card, wider student photograph, and campus preview together. Program discovery uses a two-column card grid; campus life pairs text/tabs with photography; admissions pairs guidance with FAQs above a light footer.",
         "appearance": [
           "Strong sans-serif headings and a maroon emphasized phrase form the hero hierarchy.",
           "Rounded buttons, pills, cards, icon tiles, and photographs create a coordinated geometry.",
@@ -4853,7 +4873,7 @@
       },
       "limitations": [
         "Whole-design approval does not independently rank the font, radii, imagery, individual controls, or exact CSS values.",
-        "Only the 453-pixel-wide initial full-page layout is archived. Desktop arrangement and interactions are source observations, not separately captured or approved states.",
+        "Only the desktop initial full-page layout is represented by the current B005-01 image. Other widths and interactive states are not established by this capture.",
         "Static appearance does not prove responsive transitions, keyboard behavior, accessibility or performance. No automated tests were run.",
         "Small or faint supporting labels should be adapted for readability rather than treated as required.",
         "University content and programs are fictional; forms are browser-only demonstrations.",
@@ -4888,11 +4908,11 @@
         }
       ],
       "file_metadata": {
-        "width_px": 453,
-        "height_px": 3805,
-        "bytes": 218106,
-        "sha256": "edccb458867c9f1cbee62b8c28b504de7d740fcdd77ba593fe1ecaee4fca37a9",
-        "preservation": "unmodified-original-capture"
+        "width_px": 1425,
+        "height_px": 2883,
+        "bytes": 329841,
+        "sha256": "488a843232c4bc5e285e836fccbe6a1e3b4da204e1e8a3b837b582f965608dbd",
+        "preservation": "unmodified-desktop-capture-replacing-mobile-capture"
       }
     }
   ],
