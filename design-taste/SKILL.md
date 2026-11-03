@@ -7,6 +7,14 @@ description: Apply the user's preferences for clean icons, spacing, button place
 
 Use this portable evidence library to make design choices that match the user's evolving taste. The confirmed priorities are **clean icons, spacing, button placement, and overall look and feel**. The library contains 67 submitted images across three batches, one approved Seaversity Rental implementation capture in Batch 004, and pinned, attributed Cult UI and SmoothUI source collections. Repeats, paired variants, related screen groups, and implementations derived from earlier references are recorded separately from independent evidence.
 
+## Rejected direction — read before choosing a public-page style
+
+**R001: the Ronan University landing page is explicitly rejected.** On 2026-11-03 the user rejected the entire result, specifically calling out typography, the font used, and boxy sharp edges. It did not match the supplied UI examples. Read [the rejection record](references/rejections/ronan-university.md) when designing landing pages or considering a similar direction.
+
+Do not recreate its formal university/brochure composition or a close variant: thin oversized serif/italic headlines over a darkened campus hero, a crest-like masthead, hard rectangular buttons and cards, a statistics strip, and a large concluding promotional band. Changing its name, copy, palette, or images is not a meaningful correction. Its type system and sharp boxy treatment are negative evidence, not defaults for this user's taste.
+
+Select a coherent liked reference by the actual typography, geometry, density, icon treatment, spacing, and action placement. Favor the softened controls and contemporary type hierarchy visible in the selected positive example over Ronan's treatment; the exact font and radius remain project choices. An education brief alone does not justify a traditional serif/crest style. Earlier broad editorial inferences do not override this specific rejection. Preserve requested brand colors; black, white, and maroon were requirements of that project.
+
 ## Theme belongs to the project
 
 The skill must work with any user-requested theme, client brand, or existing design system. Theme colors and light/dark/system behavior come from the current requirements and the project's design tokens, not the reference palette. An explicit request to change a theme takes precedence over existing defaults; otherwise preserve the established theme and its behavior. If the project follows the system setting, preserve that behavior. This skill alone does not require adding a theme switcher or multiple themes.
@@ -17,9 +25,9 @@ Use the project's semantic color roles for surfaces, text, borders, actions, sel
 
 ## Read only what the task needs
 
-1. Read [the taste profile](references/taste-profile.md) for confirmed preferences, scoped inferences, and open questions.
+1. Read [the taste profile](references/taste-profile.md) for confirmed preferences, explicit rejections, scoped inferences, and open questions. Check relevant implementation feedback before selecting a design direction.
 2. Use the relevant batch index: [Batch 001](references/batches/001.md) covers application components, workspaces, analytics, overlays and a tablet interface; [Batch 002](references/batches/002.md) expands dashboards, marketing, commerce, authentication, onboarding and a mobile event flow; [Batch 003](references/batches/003.md) adds editorial and long public pages, booking, a social feed, and related operational overview/detail components.
-3. Query [the catalog](references/catalog.json) by ID, family, or tags for detailed observations and limitations. Paths in the catalog are relative to this skill directory.
+3. Query [the catalog](references/catalog.json) by ID, family, or tags for detailed observations and limitations. Image evidence is in `references`; outcome feedback without a capture is in `implementation_feedback`. Paths in the catalog are relative to this skill directory.
 4. Open the original image files for the chosen references when visual inspection is available. If only descriptions are accessible, say that visual matching has not been checked.
 5. For implementation references, choose [Cult UI](references/cult-ui/README.md) and its [component index](references/cult-ui/INDEX.md), or [SmoothUI](references/smooth-ui/README.md) and its [source index](references/smooth-ui/INDEX.md). Both are explicitly liked overall design directions. Individual effects, colors, dependencies and defaults remain contextual choices.
 6. For an explicitly approved application of this skill to an operational dashboard, read [Batch 004 — Seaversity Rental](references/batches/004.md) and open B004-01. Use its shell, grid rhythm, icon treatment, and contextual actions as concrete evidence; its Seaversity colors, fonts, and implementation values belong to that project.
@@ -32,7 +40,7 @@ For editorial spacing and photography use B003-02/B003-06; for expressive food/e
 
 ## Apply the evidence
 
-Resolve decisions in this order: current project brief and explicit user/client constraints; the applicable design system and theme behavior; confirmed taste preferences within their scope; relevant inferred patterns; implementation proposals. This library supplies reusable visual guidance, not a fixed theme for every user.
+Resolve decisions in this order: current project brief and explicit user/client constraints; the applicable design system and theme behavior; confirmed taste preferences within their scope; relevant inferred patterns; implementation proposals. This library supplies reusable visual guidance, not a fixed theme for every user. Specific user feedback on an implementation takes precedence over broad inferences used to produce it.
 
 Evaluate the four confirmed priorities together:
 
@@ -77,7 +85,7 @@ Append catalog entries with visible observations, tags, family, proposed applica
 
 Write a batch note with a readable reference index and what this batch adds. Link new batch notes here and from the profile. Update the profile only where the new evidence supports a change. Preserve context-specific alternatives and explicit corrections; a new direction need not replace an older one.
 
-Keep confirmed preferences, inferred patterns, and implementation proposals clearly labeled. Confidence describes the strength and breadth of evidence, not certainty about the user's unspoken reasons. A liked screenshot does not approve every detail; an absent style is not a dislike.
+Keep confirmed preferences, inferred patterns, and implementation proposals clearly labeled. Confidence describes the strength and breadth of evidence, not certainty about the user's unspoken reasons. A liked screenshot does not approve every detail; an absent style is not a dislike. An explicitly rejected output is negative evidence: preserve the user's words, identify the rejected composition and any named details, and tell future agents how to avoid repeating it. Separate observed features and inferred causes from confirmed feedback. Do not invent a screenshot or increase the archived-image count when only feedback and source inspection are available.
 
 When the user approves a completed implementation, record the actual approval separately from the design analysis, preserve an existing capture with its creation and approval dates, and link the earlier references it adapts. Count it as one approved outcome rather than a new vote for every reused feature. Record source-derived values as implementation facts, not universal taste requirements.
 
@@ -85,5 +93,5 @@ When the user approves a completed implementation, record the actual approval se
 
 - Evidence IDs: `B001-01` means batch 1, attachment 1.
 - Catalog schema: `schema_version`, `batches`, and `references`; each reference includes source provenance, feedback, tags, observations, proposed application, limitations, relationships, and file metadata.
-- The profile is the authoritative summary of preference status. Catalog entries are the authoritative per-image record.
+- The profile is the authoritative summary of preference status. Catalog entries are the authoritative per-image record. `R001` identifies rejection feedback; `implementation_feedback` records outcomes separately from the image-only `references` array.
 - All supporting files stay inside this folder and use relative links. A future MCP reader may query the same catalog; this package itself is a local skill and reference library, not a running MCP service.

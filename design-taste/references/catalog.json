@@ -5,14 +5,14 @@
   "purpose": "Portable visual evidence library for the user's personal frontend/UI/UX design taste.",
   "evidence_policy": {
     "observations": "Visible properties of supplied images and approved implementation captures. They do not establish which individual features the user likes. Source-derived implementation values are labeled separately.",
-    "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings. B004 explicitly approves the completed Seaversity Rental design as an application of this skill, without new feature-level rankings or global theme requirements.",
+    "confirmed_preferences": "The user is building a collection of liked UI references and explicitly values clean icons, spacing, button placement, and overall look and feel. Theme colors follow current user/client requirements. Batches 002 and 003 continue that intake without new item-level preference rankings. B004 explicitly approves the completed Seaversity Rental design as an application of this skill, without new feature-level rankings or global theme requirements. R001 records explicit rejection of the entire Ronan University landing page, including typography/font treatment and boxy sharp edges; avoid reproducing the same design or close variants.",
     "inferences": "Cross-reference conclusions live in references/taste-profile.md and remain revisable.",
     "implementation_proposals": "Practical adaptations are recommendations, not extracted specifications. Every proposed application inherits the theme_independence policy and current project requirements.",
     "source_provenance": "User-supplied local images. Original URLs, authors and licenses are unknown unless separately provided. Visible product names, curation watermarks and footer labels are recorded as observed labels only; they do not verify provenance or current product behavior. B004-01 is a Codex-created capture of the sample application made for the user; its creation date, approval date, earlier reference relationships and asset provenance are recorded separately.",
     "presentation_frames": "Separate browser chrome, device bezels, curation/attribution strips, exterior backgrounds and showcase margins from application UI. Supporting collages and preview mockups are not independent approvals of every embedded screen. Distinguish decorative imagery inside the actual page from external presentation framing.",
-    "counting": "68 archived images across four batches: 67 supplied files in B001-B003 and one approved implementation capture in B004. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes. B004-01 applies B002-04 and B003-15; it is one explicit approval of a completed design, not independent confirmation of every inherited feature.",
+    "counting": "68 archived images across four batches: 67 supplied files in B001-B003 and one approved implementation capture in B004. B001-15/B001-18 are visual duplicates at different resolutions; B002-07 repeats B001-08. B002-03/B002-04 are theme variants, B002-08/B002-09 navigation variants, B002-17 through B002-21 a related console group, and B003-11 through B003-14 a related operations screen/component group. Related screens, composites and repeated originals do not count as independent preference votes. B004-01 applies B002-04 and B003-15; it is one explicit approval of a completed design, not independent confirmation of every inherited feature. R001 is one text/source-based rejected outcome in implementation_feedback, with no archived screenshot; it does not change the 68-image count or enter the image-only references array.",
     "theme_independence": "Reference colors and light/dark family labels describe the source images only. Apply structure and visual relationships using the requested brand palette, design system, and theme behavior. Do not force neutral surfaces, pastels, black buttons, or a source hue. Preserve existing system-following behavior when applicable; this library does not require adding theme modes.",
-    "reference_selection": "Select by icon treatment, spacing, action placement, hierarchy, and composition; a palette mismatch does not exclude a reference."
+    "reference_selection": "Select by icon treatment, spacing, action placement, hierarchy, and composition; a palette mismatch does not exclude a reference. Read relevant implementation_feedback before choosing a direction. Specific outcome rejection takes precedence over broad editorial inferences; topic similarity alone does not establish visual alignment."
   },
   "batches": [
     {
@@ -4763,6 +4763,83 @@
         "sha256": "a1062690bddd96b22f9362b3b6b06e2ae79df4d9d8caccfb7664df8499e690d2",
         "preservation": "unmodified-copy"
       }
+    }
+  ],
+  "implementation_feedback": [
+    {
+      "id": "R001",
+      "title": "Ronan University rejected landing page",
+      "kind": "rejected-implementation-feedback",
+      "created_on": "2026-10-30",
+      "received_on": "2026-11-03",
+      "analysis_path": "references/rejections/ronan-university.md",
+      "image_path": null,
+      "user_feedback": {
+        "overall": "explicitly-rejected-entire-design",
+        "profile_preference_ids": [
+          "C09"
+        ],
+        "statements": [
+          "this output is not align and not passed on my standards on my design preference",
+          "everything, typohraphy, the used font, boxy sharp edges, etc.. all. look how's the UI sample and what you did here. its so different. so what i want on my ui skill is to not create this same UI design."
+        ],
+        "specific_dislikes": [
+          "The entire resulting UI design",
+          "Typography and the font treatment used",
+          "Boxy sharp edges"
+        ],
+        "requested_action": "Record this rejection in the skill and do not create the same UI design."
+      },
+      "source": {
+        "kind": "conversation-feedback-and-local-source-inspection",
+        "creator": "Codex",
+        "capture_status": "No screenshot archived; source-derived observations are identified in the analysis.",
+        "file_hashes": {
+          "index.html": "95194b3a2e975f95f2f3684f3846d61e33de6509bb97e4e7933634a2b1c26a6a",
+          "styles.css": "8975f4edff8f2d832230e51789bd69850ea2d56c4c8ef357393310797f830bfe",
+          "app.js": "48c668017960df479cab2bed077ec0bd0194e8eaea92adcee48aeb7d2f7eba86",
+          "assets/campus-hero.png": "7243028bab05ab6753cd000c5b66847d2e8573162ebdc175d825369d3e13f730",
+          "assets/campus-life.png": "597cd0455ec8f16a1dac6fcc18d4adc29cb02d0e66ff64f306d3b56dd925330a"
+        }
+      },
+      "tags": [
+        "negative-evidence",
+        "rejected-implementation",
+        "ronan-university",
+        "landing-page",
+        "typography",
+        "font-treatment",
+        "boxy-sharp-edges",
+        "formal-brochure-composition"
+      ],
+      "source_observations": {
+        "typography": "Libre Caslon Display/Georgia headings with thin oversized serif and italic phrases; DM Sans/Arial body and controls.",
+        "composition": "Crest-like maroon masthead; darkened historic-campus photographic hero; numbered quick links; split introduction and stats; three hard rectangular program cards; campus photo/accordion split; large promotional band and dark footer.",
+        "geometry": "Predominantly sharp rectangular buttons and cards with thin dividers, underlined actions, and small round arrow badges."
+      },
+      "agent_application": {
+        "status": "avoid-repeating-rejected-direction",
+        "principle": "Do not recreate this composition, type system, or boxy component treatment, including close variants with changed text, palette, or images. Select a coherent liked reference by actual visual characteristics rather than subject alone.",
+        "theme_policy_ref": "evidence_policy.theme_independence"
+      },
+      "relationships": [
+        {
+          "type": "rejected-implementation-derived-from",
+          "target": "B002-02",
+          "note": "The local README cites institutional editorial guidance; this rejection does not rescind the original reference."
+        },
+        {
+          "type": "rejected-implementation-derived-from",
+          "target": "B003-06",
+          "note": "The local README cites architecture-led editorial guidance; the agent's resulting combination is rejected."
+        }
+      ],
+      "limitations": [
+        "Whole-design rejection and named typography/geometry dislikes are confirmed; other observed features identify the result without proving separate item-level causes.",
+        "Black, white, and maroon branding and generated imagery were explicitly requested; do not infer standalone bans.",
+        "No replacement font or exact corner radius was supplied. DM Sans also appears in approved B004-01; no isolated universal family ban is established.",
+        "No screenshot or new render/behavioral verification is included; the image count remains unchanged."
+      ]
     }
   ]
 }
