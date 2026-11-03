@@ -32,14 +32,6 @@ Duplicates, variants, and related screen groups are recorded without counting th
 
 This repository contains a local skill and reference library. It does not yet include a running MCP server or frontend application.
 
-## Approved implementation: Seaversity Rental
-
-The user explicitly approved this design on 2026-11-03 as matching their taste. It applies the library's dashboard hierarchy and aligned workspace patterns to the supplied Seaversity brand. Future agents can use it as a concrete operational-dashboard reference while following each new project's palette and design system.
-
-[![Seaversity Rental approved overview](design-taste/references/images/b004-01.jpg)](design-taste/references/batches/004.md)
-
-Read the [case study and scope of approval](design-taste/references/batches/004.md). The reference is self-contained and does not require a hosted demo.
-
 ## Find a code reference
 
 Python 3.10 or newer; no third-party Python packages needed. Run from this repository's root:
