@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "path_base": "skill-root",
+  "collections": [
+    {"id": "images", "format": "images", "catalog": "references/catalog.json", "path_base": ".", "guide": "references/reference-routing.md", "role": "Visual taste evidence and explicit outcome feedback; artwork reuse rights not established"},
+    {"id": "cult-ui", "format": "entries", "catalog": "references/cult-ui/catalog.json", "path_base": "references/cult-ui", "guide": "references/cult-ui/README.md", "snapshot": "references/cult-ui/snapshot.json", "role": "Liked overall design direction; MIT code reference"},
+    {"id": "smooth-ui", "format": "entries", "catalog": "references/smooth-ui/catalog.json", "path_base": "references/smooth-ui", "guide": "references/smooth-ui/README.md", "snapshot": "references/smooth-ui/snapshot.json", "role": "Liked overall design direction; MIT code reference"},
+    {"id": "motionsites", "format": "entries", "catalog": "references/motionsites/catalog.json", "path_base": "references/motionsites", "guide": "references/motionsites/README.md", "snapshot": "references/motionsites/snapshot.json", "role": "Requested workflow and technique resource; not a blanket visual preference"}
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/Motionsites-AI/claude-skill",
+    "commit": "faa30d512e3973e58675c72101a7ef42ed37ae83"
+  },
+  "license": {
+    "file": "source/LICENSE",
+    "scope": "MIT instructions, references, scripts and packaging text only"
+  },
+  "file_count": 20,
+  "bytes": 344638,
+  "excluded": [
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-character-studio.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-collectible-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-jack-portfolio-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/INDEX.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aethera-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aetheris-voyage-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/agent-wave.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-runtime.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-workflow.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/asme-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bloom-ai-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bold-studio.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/contact-cybernetic.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/creative-studio.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-epoch-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-experiences.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/email-landing-page.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/equilibrium.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/halo-usd-landing.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/immersive-ocean.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/innovation-landing.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligence-layer.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligent-operations.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/interactive-discovery.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mindloop-landing.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/modern-agency.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mostar-guide.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neo-museum.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neon-logic.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/network-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portal-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portfolio-cosmic-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prisma-landing.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prompt-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prosthetics-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/retro-futurist.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/securify-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/stillmind.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/tech-forward.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/velorah-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/vex-ventures-hero.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/MEDIA.md",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/sheet-1.jpg",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/sheet-2.jpg",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/sheet-3.jpg",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/sheet-4.jpg",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/sheet-5.jpg",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/media/sheet-6.jpg",
+      "reason": "Restricted prompt/media collection; link upstream only"
+    },
+    {
+      "upstream_path": "preview-media.jpg",
+      "reason": "Preview artwork; not needed for code reuse"
+    }
+  ],
+  "files": [
+    {
+      "path": "source/.claude-plugin/marketplace.json",
+      "upstream_path": ".claude-plugin/marketplace.json",
+      "git_blob": "cd79c5d7feada5b127fc52ba0e2b55d5e7f3dcb6",
+      "sha256": "22360d0126272af1e985a7f5d43ed4527173ee88043d90983a6663252e03cca5",
+      "bytes": 638
+    },
+    {
+      "path": "source/.gitignore",
+      "upstream_path": ".gitignore",
+      "git_blob": "9ca5fb4d39a303b87ded1975bbd24fd0ff31a053",
+      "sha256": "a111d48086f945731fb62a3565e854fea4b7ae1818cb2aa38ea288f3e055cbc7",
+      "bytes": 36
+    },
+    {
+      "path": "source/LICENSE",
+      "upstream_path": "LICENSE",
+      "git_blob": "a3d8ddfaa8798fbd4d12b91b10701e4da1124ac4",
+      "sha256": "6cd724256c3089086ad084e840fc9de970e59a9f1a72acf776ef937cec53a806",
+      "bytes": 1614
+    },
+    {
+      "path": "source/README.md",
+      "upstream_path": "README.md",
+      "git_blob": "e97a7effeb157976b267b947b5ea09a22ddd549e",
+      "sha256": "1917193caff7171b33ebaea13d934a958d3365853a1f1632bd041665fdfcd738",
+      "bytes": 4098
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/.claude-plugin/plugin.json",
+      "upstream_path": "plugins/motionsites-web-builder/.claude-plugin/plugin.json",
+      "git_blob": "9556a6fd507be2bba335a4e8f9a748786d510d9d",
+      "sha256": "8d32b0dc3722c7035c699e052bf3282c4008798c055f888422fe7abd6eff62ef",
+      "bytes": 591
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/SKILL.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/SKILL.md",
+      "git_blob": "f0e9afb04209710b718f0eabcf06d8326e60d46c",
+      "sha256": "bac1e1f79e5fd72b253c978e64f708a828b94c3512ec4d1e2eb13d3204e79035",
+      "bytes": 8693
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/assets.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/assets.md",
+      "git_blob": "14a16138f3d1ae75c7ecf0cbd6327a8acb2bde52",
+      "sha256": "4900966ba4859650441c35e28ee25ba2dc39291f9de6428b3f597f2e7c683413",
+      "bytes": 6755
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/builders.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/builders.md",
+      "git_blob": "82e779e4063878f3744ca84cbf3520b48b0ffe43",
+      "sha256": "587f1edc275c517e4d774c921c5581e3df6c718975e04ed7b6243caf0f706804",
+      "bytes": 2106
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/craft.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/craft.md",
+      "git_blob": "be79172c61b2723e7781aef25b31bf1a0a0c9acd",
+      "sha256": "30650c2c7e922a77204b8ee36720a790d665be65bbbbbb3e8374e6f5d5b900c7",
+      "bytes": 17316
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/review.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/review.md",
+      "git_blob": "064ba781f5d5edb8824e2c464916442de888395a",
+      "sha256": "4a9d300b304f3f2a9f01e42fff55c492a9e8e1b967744ebf74e0b4ca939b1bdc",
+      "bytes": 4356
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/spec-template.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/spec-template.md",
+      "git_blob": "9c65299559ae5b8f863dfa39c63e4206614ef836",
+      "sha256": "08ece97c3a9e24742266db748ce70e2bbc3d1ad3b32d22c72220c99f73f47823",
+      "bytes": 7489
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/3d-and-webgl.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/3d-and-webgl.md",
+      "git_blob": "6498725c43df43a1a1f48272a8193e1d77fc6957",
+      "sha256": "ce8fdd7f79d2a2793393589305c5f00200a23427767f232aadd3c7c6d374af5e",
+      "bytes": 27837
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/INDEX.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/INDEX.md",
+      "git_blob": "e42e5b3b189fda171867171574e21116843a45be",
+      "sha256": "5bb76f0e2abcf27178f7356ec0f67a2038efd0d88b050f7d2186d14cf54d6c86",
+      "bytes": 9535
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "git_blob": "ef1b1ef1ab2861cda4216d4fd2acabd2fe461ccb",
+      "sha256": "76af94cdc8b6491e54f47c3690df93f6ae31321fb4c6606670c573a73e44c2eb",
+      "bytes": 32730
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "git_blob": "b4993ed295c1aebdc9cd7bf780eb38e69c85fe75",
+      "sha256": "31f976e7c11f41a27f5692838fd246b33307ebd806783b9581aae5abe3dd9738",
+      "bytes": 55079
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "git_blob": "307105e60aca9d290518cbefb06bc3df16cc6f39",
+      "sha256": "5e0c8ee2da9decd8f0014259ce86384b64642d0e0b7a56a54d13675a2fac5423",
+      "bytes": 35595
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "git_blob": "fa6c8a5c259ac615d70d9e42fce5a36a3eab95d0",
+      "sha256": "2923de3d50f4971a8c7a7c5abe8e57813831efe2baa9194061dcefd8b83e8936",
+      "bytes": 33111
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "git_blob": "6a820d903e0ffca669963af532eef3f99ffeb182",
+      "sha256": "c1c8fedfe88ba0a85a1612ef3ae6f18909aac040e78dbd77451d548fd687bff7",
+      "bytes": 52672
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "git_blob": "22b70cf5c5477988fde6c7f9dc137cacfad2badb",
+      "sha256": "7f1ab104b64539de041018f7d915ecb8e3a4d9c8a18b3181592814bff3af05cf",
+      "bytes": 38644
+    },
+    {
+      "path": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/scripts/shoot.py",
+      "upstream_path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/scripts/shoot.py",
+      "git_blob": "acd6f84f516d573c51858c11ef78047591d92410",
+      "sha256": "a53419cddb104cd18c34de5f2376b930859ce0312c27f0b081c4ae85faa10ff7",
+      "bytes": 5743
+    }
+  ]
+}

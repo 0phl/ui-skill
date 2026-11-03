@@ -20,9 +20,17 @@ Dependencies, trademarks, externally hosted media and other third-party assets r
 
 Our guides, catalog, index and scripts are additions for this skill, not upstream endorsements. The [manifest](design-taste/references/smooth-ui/snapshot.json) records the exact upstream paths, Git blob IDs, SHA-256 hashes and exclusions. No paid/private source or assets were obtained, and sample promotional copy does not supersede the actual license.
 
+## MotionSites
+
+Source: [Motionsites-AI/claude-skill](https://github.com/Motionsites-AI/claude-skill), commit [`faa30d512e3973e58675c72101a7ef42ed37ae83`](https://github.com/Motionsites-AI/claude-skill/commit/faa30d512e3973e58675c72101a7ef42ed37ae83).
+
+The 20 files under `design-taste/references/motionsites/source/` preserve the reusable text, code and packaging files unchanged, including the full upstream [split license](design-taste/references/motionsites/source/LICENSE). Its instructions, references and scripts are MIT-licensed with **Copyright (c) 2026 MotionSites**. Keep the MIT notice with copies or substantial adaptations. Our build/review guides adapt workflow concepts from this source; our routing, search and import tooling are additions, not upstream endorsements.
+
+The upstream `examples/` and `media/` directories, including linked videos/images, have separate restrictions against redistribution as a prompt or media collection. They are not bundled here. The collection guide links to those upstream resources and records the distinction; no preview artwork, media sheets or hosted media were copied into the distributed skill. Third-party dependencies and external assets keep their own terms. The [snapshot](design-taste/references/motionsites/snapshot.json) records all included files, hashes and excluded paths.
+
 ## User-supplied visual references
 
-The 67 images in batches B001–B003 under `design-taste/references/images/` were supplied as design references. Available provenance and uncertain attribution are recorded in the screenshot catalog. The Cult UI and SmoothUI licenses do not cover these images; their inclusion does not establish permission to reuse their artwork, branding or photography in a shipped product.
+The 67 images in batches B001–B003 under `design-taste/references/images/` were supplied as design references. Available provenance and uncertain attribution are recorded in the screenshot catalog. The Cult UI, SmoothUI and MotionSites source licenses do not cover these images; their inclusion does not establish permission to reuse their artwork, branding or photography in a shipped product.
 
 ## Approved Seaversity Rental implementation capture
 

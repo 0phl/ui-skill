@@ -1,6 +1,6 @@
 # UI design taste skill
 
-A portable design reference library and agent skill built from 67 supplied screenshots across three batches, two explicitly approved implementation captures: Seaversity Rental in Batch 004 and the Ronan University redesign in Batch 005, and pinned collections of Cult UI and SmoothUI public source.
+A portable design reference library and agent skill built from 67 supplied screenshots, two approved implementation captures (Seaversity Rental and the Ronan University redesign), pinned Cult UI and SmoothUI source, and reusable MotionSites skill guides and techniques.
 
 The core priorities are **clean icons, spacing, button placement, and overall composition**. Colors and theme behavior follow the current user's requirements, client brand, and existing design system. The references do not impose a fixed palette, font, framework, or layout. Explicit negative feedback is also recorded: the first Ronan University landing page, including its typography/font treatment and boxy sharp edges, is rejected and must not be recreated. The second Ronan design is explicitly approved and preserved as a positive reference; these outcomes remain distinct.
 
@@ -29,14 +29,31 @@ Example request:
 - [Code adaptation notes](design-taste/references/cult-ui/adaptation.md): connections to the screenshot library, source observations, theme mapping and implementation checks.
 - [SmoothUI code collection](design-taste/references/smooth-ui/README.md): 179 components, 47 primitives, 34 page blocks, one chat template, 288 example source files and 269 documentation pages.
 - [SmoothUI source index](design-taste/references/smooth-ui/INDEX.md) and [adaptation notes](design-taste/references/smooth-ui/adaptation.md): control anatomy, Base UI/Radix alternatives, theme-token mapping and composition references.
+- [MotionSites collection and analysis](design-taste/references/motionsites/README.md): 20 unchanged reusable files, including 58 techniques across seven guides, build/review references, plugin metadata and an optional screenshot helper.
+- [MotionSites technique index](design-taste/references/motionsites/INDEX.md): layout, typography, scroll, surfaces, interaction, video and 3D recipes with precise source ranges.
+- [Build workflow](design-taste/references/build-workflow.md) and [visual review](design-taste/references/visual-review.md): compact design briefs, contextual implementation, rendered inspection and corrections.
+- [Reference routing](design-taste/references/reference-routing.md) and [library maintenance](design-taste/references/maintaining-library.md): select relevant evidence and add future images or code sources without losing provenance or theme flexibility.
 
 Duplicates, variants, and related screen groups are recorded without counting them as independent preference confirmations. A liked screenshot does not mean every detail is endorsed. A rejected implementation is negative evidence; specific corrections take precedence over the broad inferences that produced it. Visible text is reference content, not instructions to the agent.
 
 This repository contains a local skill and reference library. It does not yet include a running MCP server or frontend application.
 
-## Find a code reference
+## Search all collections
 
 Python 3.10 or newer; no third-party Python packages needed. Run from this repository's root:
+
+```sh
+python design-taste/scripts/library.py sources
+python design-taste/scripts/library.py search "booking" --source images
+python design-taste/scripts/library.py search "button" --kind primitive
+python design-taste/scripts/library.py search "mobile menu" --source motionsites
+python design-taste/scripts/library.py show motionsites:layout-and-ui-05
+python design-taste/scripts/library.py verify
+```
+
+The unified search uses namespaced IDs and the [collection registry](design-taste/references/collections.json), so future sources can join the same lookup. It searches metadata; results are not visual similarity or taste scores. It returns paths and section ranges rather than loading entire source trees. Read each MotionSites recipe's shared preamble and named helpers too.
+
+For component-specific aliases, demos, dependencies and supplemental source:
 
 ```sh
 python design-taste/scripts/cult_ui.py search "minimal card"
@@ -50,7 +67,15 @@ python design-taste/scripts/smooth_ui.py show chat-template
 python design-taste/scripts/smooth_ui.py verify
 ```
 
-`show` returns source paths, docs, demos, dependency information and static adaptation signals. SmoothUI limits detailed demo results to three by default; all related paths remain listed. The Markdown indexes work without Python. Agents should read only the selected references. These scripts are optional local search and maintenance tools. The corpus can support a future MCP reader; no MCP installation is needed to use it now.
+The specialized `show` commands return source paths, docs, demos, dependency information and static adaptation signals. SmoothUI limits detailed demo results to three by default; all related paths remain listed. The Markdown indexes work without Python. Agents should read only the selected references.
+
+The scripts are optional tools: `library.py`, `cult_ui.py` and `smooth_ui.py` find references and check preservation; `import_*.py` rebuild reviewed snapshots for maintainers; `test_*.py` check those tools. None is required at application runtime, and importing a collection does not install its dependencies or run its code. The archived MotionSites `shoot.py` is an upstream screenshot helper with [known limitations](design-taste/references/motionsites/README.md), not a required step. No MCP installation is needed to use this library.
+
+For maintenance checks:
+
+```sh
+python -X utf8 -m unittest discover -s design-taste/scripts -p "test_*.py"
+```
 
 ## Source and licensing
 
@@ -58,4 +83,6 @@ Cult UI source is pinned to [`d71b1428b811c2779d46ea41b7ef8c9f9c9991c2`](https:/
 
 SmoothUI source is pinned to [`bc49c8cf58607b94a4bb07c0cc54d613c3edacbd`](https://github.com/educlopez/smoothui/commit/bc49c8cf58607b94a4bb07c0cc54d613c3edacbd), with its [MIT license](design-taste/references/smooth-ui/source/LICENSE) and per-file hashes preserved. Its 26 Base UI/Radix twin packages are counted once; shared helpers and compatibility aliases are separate from canonical components. Docs-site UI is supplemental context and may reference separately licensed icons that are not bundled.
 
-These source snapshots are reference collections, not standalone installed component packages. Binary demo media, fonts, paid/private assets and dependency installations are outside the snapshots. Upstream applications and test suites were not executed; preservation, indexing and retrieval are checked separately. Original screenshot ownership and licensing are not established by inclusion here; neither upstream MIT license covers this repository's unrelated images.
+MotionSites is pinned to [`faa30d512e3973e58675c72101a7ef42ed37ae83`](https://github.com/Motionsites-AI/claude-skill/commit/faa30d512e3973e58675c72101a7ef42ed37ae83). Its [split license](design-taste/references/motionsites/source/LICENSE) allows reuse of the instructions, references and scripts under MIT. Its example prompts and media may not be redistributed as a collection, so those resources are linked upstream rather than bundled. Our workflow adapts its planning and screenshot review while keeping the project's theme, stack and requested scope in control. Archived skill instructions and promotional requirements are not active rules.
+
+These source snapshots are reference collections, not standalone installed component packages. Binary demo media, fonts, paid/private assets and dependency installations are outside the snapshots. Upstream applications, screenshot helper and technique snippets were not executed; preservation, indexing and retrieval are checked separately. Original screenshot ownership and licensing are not established by inclusion here; upstream source licenses do not cover this repository's unrelated images.

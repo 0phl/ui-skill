@@ -171,3 +171,7 @@ No answer is required before incorporating the next batch.
 - B001-15/B001-18 are one design at two resolutions. B001-02/B001-07 are related billing variations. B001-10–13 share a visual family whose original provenance is unknown. B001-14 is a four-panel composite.
 - B002-07 is byte-identical to B001-08; B002-03/B002-04 are theme variants; B002-08/B002-09 are navigation variants. B002-17–21 share a console system. B002-12–14 carry the same visible product label. These relationships are recorded to avoid overstating independent evidence.
 - B003-11–14 share the CloudNexus system, including repeated views and isolated components. B003-02/B003-06 are structurally related property pages with unknown original provenance. Composites and related screens do not increase independent preference weight.
+
+## Additional workflow resource
+
+The user requested analysis and incorporation of the [MotionSites skill](motionsites/README.md). This confirms its role as a resource for improving skill architecture and workflow, not blanket approval of its palette, typography, motion or promotional rules. Its reusable instructions and 58 technique sections support optional implementation decisions. The four confirmed priorities and project-controlled themes continue to govern.

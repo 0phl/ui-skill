@@ -1,5 +1,7 @@
 .cult-ui-upstream/
 .smoothui-upstream/
+.motionsites-upstream/
+.library-test-*/
 __pycache__/
 *.pyc
 .venv/

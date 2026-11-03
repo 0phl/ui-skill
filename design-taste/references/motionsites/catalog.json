@@ -1,0 +1,1040 @@
+{
+  "schema_version": 1,
+  "source_commit": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+  "path_base": "references/motionsites",
+  "analysis_method": "Numbered Markdown headings outside code fences; line ranges include recipes, not dependency closure.",
+  "entries": [
+    {
+      "name": "3d-and-webgl-01",
+      "kind": "technique",
+      "category": "3d-and-webgl",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/3d-and-webgl.md",
+      "start_line": 9,
+      "end_line": 338,
+      "number": 1,
+      "title": "Real 3D model hero (Three.js + GLB)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 8
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/3d-and-webgl.md#L9",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "3d-and-webgl-02",
+      "kind": "technique",
+      "category": "3d-and-webgl",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/3d-and-webgl.md",
+      "start_line": 339,
+      "end_line": 487,
+      "number": 2,
+      "title": "Animated shader backdrop (swirl + pointer chroma blob + fluted glass + grain)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 8
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/3d-and-webgl.md#L339",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-01",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 18,
+      "end_line": 99,
+      "number": 1,
+      "title": "Depth carousel with role slots and background-colour crossfade",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L18",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-02",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 100,
+      "end_line": 141,
+      "number": 2,
+      "title": "Magnetic hover (element drifts toward the cursor)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L100",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-03",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 142,
+      "end_line": 182,
+      "number": 3,
+      "title": "Pointer parallax depth layers",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L142",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-04",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 183,
+      "end_line": 252,
+      "number": 4,
+      "title": "Cursor-following spotlight reveal mask",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L183",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-05",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 253,
+      "end_line": 298,
+      "number": 5,
+      "title": "Cursor image trail",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L253",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-06",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 299,
+      "end_line": 355,
+      "number": 6,
+      "title": "Exclusion-blend overlay UI & custom cursor",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L299",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-07",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 356,
+      "end_line": 420,
+      "number": 7,
+      "title": "Orbit rings with counter-rotating avatars",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L356",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "depth-and-interaction-08",
+      "kind": "technique",
+      "category": "depth-and-interaction",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md",
+      "start_line": 421,
+      "end_line": 534,
+      "number": 8,
+      "title": "Sand-dissolve image transition (SVG turbulence) + auto-cycling index list",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/depth-and-interaction.md#L421",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-01",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 18,
+      "end_line": 88,
+      "number": 1,
+      "title": "Hero composition patterns",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L18",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-02",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 89,
+      "end_line": 143,
+      "number": 2,
+      "title": "Viewport-locked single-frame hero (height-based design units)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L89",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-03",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 144,
+      "end_line": 206,
+      "number": 3,
+      "title": "Floating pill navigation",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L144",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-04",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 207,
+      "end_line": 272,
+      "number": 4,
+      "title": "Expanding glass capsule menu",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L207",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-05",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 273,
+      "end_line": 384,
+      "number": 5,
+      "title": "Mobile menu: burger morph + staggered overlay / drawer / bottom sheet",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L273",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-06",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 385,
+      "end_line": 420,
+      "number": 6,
+      "title": "Overlapping avatar trust cluster with pill",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L385",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-07",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 421,
+      "end_line": 493,
+      "number": 7,
+      "title": "Selectable chip group with spring check and auto-height summary",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L421",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-08",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 494,
+      "end_line": 553,
+      "number": 8,
+      "title": "In-page product UI mockup (app-window chrome)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L494",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-09",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 554,
+      "end_line": 594,
+      "number": 9,
+      "title": "Desktop grid that becomes a mobile scroll-snap rail",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L554",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-10",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 595,
+      "end_line": 666,
+      "number": 10,
+      "title": "Seamless infinite marquee (logos, image strip, giant text) with edge-fade mask",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L595",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "layout-and-ui-11",
+      "kind": "technique",
+      "category": "layout-and-ui",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md",
+      "start_line": 667,
+      "end_line": 755,
+      "number": 11,
+      "title": "Infinite looping card slider (triple clone + instant re-centre)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/layout-and-ui.md#L667",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-01",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 17,
+      "end_line": 70,
+      "number": 1,
+      "title": "Viewport-triggered staggered reveal (+ directional corner decor)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L17",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-02",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 71,
+      "end_line": 227,
+      "number": 2,
+      "title": "Sticky cinematic stage with CSS-variable choreography (scroll windows, split-frame parting, depth-of-field, tint)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L71",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-03",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 228,
+      "end_line": 322,
+      "number": 3,
+      "title": "Panel slide-over hero + viewport-scaled scattered gallery + blend outro",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L228",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-04",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 323,
+      "end_line": 398,
+      "number": 4,
+      "title": "Pinned heading with counter-drifting parallax columns (+ single-element parallax)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L323",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-05",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 399,
+      "end_line": 453,
+      "number": 5,
+      "title": "Sticky stacking cards that scale down",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L399",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-06",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 454,
+      "end_line": 495,
+      "number": 6,
+      "title": "Scroll-linked opposing marquee rows",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L454",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "scroll-07",
+      "kind": "technique",
+      "category": "scroll",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md",
+      "start_line": 496,
+      "end_line": 552,
+      "number": 7,
+      "title": "3D tilted text crawl on scroll (spring-smoothed)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/scroll.md#L496",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-01",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 17,
+      "end_line": 89,
+      "number": 1,
+      "title": "Liquid-glass surface (gradient hairline rim)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L17",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-02",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 90,
+      "end_line": 142,
+      "number": 2,
+      "title": "Frosted glass UI kit over video (chips, accent badge, numbered panel, contact card)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L90",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-03",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 143,
+      "end_line": 208,
+      "number": 3,
+      "title": "Premium button finishes (liquid-metal + sweep shine, halo pill, jewel pill)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L143",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-04",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 209,
+      "end_line": 248,
+      "number": 4,
+      "title": "Text-roll button with rotating arrow chip",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L209",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-05",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 249,
+      "end_line": 287,
+      "number": 5,
+      "title": "Sliding-fill buttons (+ hard offset shadow)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L249",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-06",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 288,
+      "end_line": 325,
+      "number": 6,
+      "title": "Animated gradient border ring (@property conic spin · hover ring)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L288",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-07",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 326,
+      "end_line": 378,
+      "number": 7,
+      "title": "Media card hover: icon-to-label pill, zoom, frosted veil",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L326",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "surfaces-and-buttons-08",
+      "kind": "technique",
+      "category": "surfaces-and-buttons",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md",
+      "start_line": 379,
+      "end_line": 435,
+      "number": 8,
+      "title": "Texture overlays: film grain, noise inside type, halftone, dot grid",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/surfaces-and-buttons.md#L379",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-01",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 18,
+      "end_line": 83,
+      "number": 1,
+      "title": "Staggered blur-rise load choreography (+ settle-zoom media)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L18",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-02",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 84,
+      "end_line": 147,
+      "number": 2,
+      "title": "Fail-safe entrance system with a motion vocabulary",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L84",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-03",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 148,
+      "end_line": 207,
+      "number": 3,
+      "title": "Word-by-word blur-in headline",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L148",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-04",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 208,
+      "end_line": 307,
+      "number": 4,
+      "title": "Split-text headline entrances (masked line/word pull-up · soft word rise · per-character cascade)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L208",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-05",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 308,
+      "end_line": 334,
+      "number": 5,
+      "title": "Serif-italic accent words inside a headline",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L308",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-06",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 335,
+      "end_line": 361,
+      "number": 6,
+      "title": "Gradient-clipped text: static metallic and animated shine sweep",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L335",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-07",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 362,
+      "end_line": 423,
+      "number": 7,
+      "title": "Scramble / decode text (entrance + hover)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L362",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-08",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 424,
+      "end_line": 505,
+      "number": 8,
+      "title": "Typewriter with zero-reflow caret, two-tone text and a depth-of-field lead-in",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L424",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-09",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 506,
+      "end_line": 541,
+      "number": 9,
+      "title": "Rotating word slot (zero-reflow)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L506",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-10",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 542,
+      "end_line": 592,
+      "number": 10,
+      "title": "Scroll-linked word-by-word (or char-by-char) opacity reveal",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L542",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-11",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 593,
+      "end_line": 688,
+      "number": 11,
+      "title": "Giant display type as image (ghost word behind subject · edge-to-edge wordmark · watermark · scattered words)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L593",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-12",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 689,
+      "end_line": 723,
+      "number": 12,
+      "title": "Geometric SVG wordmark assembly",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L689",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "type-and-text-motion-13",
+      "kind": "technique",
+      "category": "type-and-text-motion",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md",
+      "start_line": 724,
+      "end_line": 826,
+      "number": 13,
+      "title": "Count-up statistics & counter preloader",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/type-and-text-motion.md#L724",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-01",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 18,
+      "end_line": 88,
+      "number": 1,
+      "title": "Cinematic background video layer (autoplay, HLS, off-screen pause, settle-in)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L18",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-02",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 89,
+      "end_line": 180,
+      "number": 2,
+      "title": "Seamless video loop with rAF opacity fades (manual loop, optional playlist)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L89",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-03",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 181,
+      "end_line": 236,
+      "number": 3,
+      "title": "Background-video framing & art direction",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L181",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-04",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 237,
+      "end_line": 284,
+      "number": 4,
+      "title": "Edge-blend scrims & text protection over video",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L237",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-05",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 285,
+      "end_line": 312,
+      "number": 5,
+      "title": "Progressive bottom blur (masked backdrop-filter)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L285",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-06",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 313,
+      "end_line": 417,
+      "number": 6,
+      "title": "Cursor-scrubbed video (delta scrub · split dual-video)",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L313",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-07",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 418,
+      "end_line": 535,
+      "number": 7,
+      "title": "Scroll-scrubbed video with canvas frame cache",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L418",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-08",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 536,
+      "end_line": 605,
+      "number": 8,
+      "title": "Boomerang (ping-pong) video loop",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L536",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": "video-and-media-09",
+      "kind": "technique",
+      "category": "video-and-media",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md",
+      "start_line": 606,
+      "end_line": 668,
+      "number": 9,
+      "title": "Crossfading multi-video scene switcher with adaptive text tone",
+      "shared_preamble": {
+        "start_line": 1,
+        "end_line": 17
+      },
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/video-and-media.md#L606",
+      "verification": "Source reference; recipe runtime and accessibility not independently verified."
+    },
+    {
+      "name": ".claude-plugin/marketplace.json",
+      "kind": "support",
+      "title": "marketplace.json",
+      "category": "workflow",
+      "file": "source/.claude-plugin/marketplace.json",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/.claude-plugin/marketplace.json"
+    },
+    {
+      "name": ".gitignore",
+      "kind": "support",
+      "title": ".gitignore",
+      "category": "workflow",
+      "file": "source/.gitignore",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/.gitignore"
+    },
+    {
+      "name": "LICENSE",
+      "kind": "support",
+      "title": "LICENSE",
+      "category": "workflow",
+      "file": "source/LICENSE",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE"
+    },
+    {
+      "name": "README.md",
+      "kind": "guide",
+      "title": "MotionSites Web Builder: a free Claude skill",
+      "category": "workflow",
+      "file": "source/README.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/README.md"
+    },
+    {
+      "name": "plugins/motionsites-web-builder/.claude-plugin/plugin.json",
+      "kind": "support",
+      "title": "plugin.json",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/.claude-plugin/plugin.json",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/.claude-plugin/plugin.json"
+    },
+    {
+      "name": "SKILL.md",
+      "kind": "guide",
+      "title": "MotionSites Web Builder",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/SKILL.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/SKILL.md"
+    },
+    {
+      "name": "references/assets.md",
+      "kind": "guide",
+      "title": "Media: sourcing, generating, preparing",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/assets.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/assets.md"
+    },
+    {
+      "name": "references/builders.md",
+      "kind": "guide",
+      "title": "Prompts for other builders",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/builders.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/builders.md"
+    },
+    {
+      "name": "references/craft.md",
+      "kind": "guide",
+      "title": "Craft: the taste rules",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/craft.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/craft.md"
+    },
+    {
+      "name": "references/review.md",
+      "kind": "guide",
+      "title": "Look-and-fix review",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/review.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/review.md"
+    },
+    {
+      "name": "references/spec-template.md",
+      "kind": "guide",
+      "title": "The build spec",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/spec-template.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/spec-template.md"
+    },
+    {
+      "name": "references/techniques/INDEX.md",
+      "kind": "guide",
+      "title": "Technique library: index",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/INDEX.md",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/references/techniques/INDEX.md"
+    },
+    {
+      "name": "scripts/shoot.py",
+      "kind": "support",
+      "title": "shoot.py",
+      "category": "workflow",
+      "file": "source/plugins/motionsites-web-builder/skills/motionsites-web-builder/scripts/shoot.py",
+      "source_url": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/scripts/shoot.py"
+    }
+  ]
+}
